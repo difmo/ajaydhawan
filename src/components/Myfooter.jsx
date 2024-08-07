@@ -22,23 +22,25 @@ export default function Myfooter() {
               <span className="text-[white]">GenzoAlpha</span>
             </a>
             <div>
-              <p className="mb-1 text-white">copyright</p>
-              <p className="text-white">all right reserved</p>
+              <p className="text-white">
+              Unleash Your Business Potential -ZenzoAlpha Consultancy</p>
             </div>  
           </div>
           <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6 ">
             <div>
-              <Footer.Title title="about" />
+              <Footer.Title title="Pages" />
               <Footer.LinkGroup col>
-                <Footer.Link href="#">Flowbite</Footer.Link>
-                <Footer.Link href="#">Tailwind CSS</Footer.Link>
+                <Footer.Link href="#">Home</Footer.Link>
+                <Footer.Link href="#">Services</Footer.Link>
+                <Footer.Link href="#">About</Footer.Link>
               </Footer.LinkGroup>
             </div>
             <div>
               <Footer.Title title="Follow us" />
               <Footer.LinkGroup col>
-                <Footer.Link href="#">Github</Footer.Link>
-                <Footer.Link href="#">Discord</Footer.Link>
+                <Footer.Link href="#">Instagram</Footer.Link>
+                <Footer.Link href="#">Facebook</Footer.Link>
+                <Footer.Link href="#">Twitter</Footer.Link>
               </Footer.LinkGroup>
             </div>
             <div>
@@ -46,6 +48,7 @@ export default function Myfooter() {
               <Footer.LinkGroup col>
                 <Footer.Link href="#">Privacy Policy</Footer.Link>
                 <Footer.Link href="#">Terms &amp; Conditions</Footer.Link>
+                <Footer.Link href="#">FAQ</Footer.Link>
               </Footer.LinkGroup>
             </div>
           </div>
