@@ -113,7 +113,7 @@ const Navbar = () => {
               spy={true}
               smooth={true}
               offset={-100}
-              className="block hover:text-brandPrimary text-base first:font-medium"
+              className="block text-white hover:text-brandPrimary text-base first:font-medium"
               onClick={() => setIsMenuOpen(false)} // Close menu on item click
             >
               {link}
