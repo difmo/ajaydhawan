@@ -53,7 +53,7 @@ const Navbar = () => {
             className="text-2xl font-bold flex items-center space-x-3"
           >
             <img className="w-10 inline-block" src={logo} alt="GenzoAlpha Logo" />
-            <span className="text-brandPrimary">GenzoAlpha</span>
+            <span className="text-brandPrimary">ZenzoAlpha</span>
           </a>
 
           {/* nav items for large devices */}
