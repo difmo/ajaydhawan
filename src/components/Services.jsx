@@ -6,32 +6,35 @@ import comp4 from "../assets/trustedComp/img4.png";
 import comp5 from "../assets/trustedComp/img5.jpg";
 import comp6 from "../assets/trustedComp/img6.png";
 const Services = () => {
-  const services = [
-    {
-      id: 1,
-      title: "Membership Organization",
-      description:
-        "Providing support and resources for members of various organizations.",
-      image: comp1, // Placeholder image URL
-    },
-    {
-      id: 2,
-      title: "Consulting Services",
-      description:
-        "Offering expert advice and solutions to help businesses improve their performance.",
-      image:comp2, // Placeholder image URL
-    },
-    {
-      id: 3,
-      title: "Training and Workshops",
-      description:
-        "Conducting training sessions and workshops to enhance skills and knowledge.",
-      image: comp3, // Placeholder image URL
-    },
-  ];
-
+const services = [
+  {
+    id: 1,
+    title: "Membership Organization",
+    description:
+      "Offering comprehensive support and resources to diverse membership organizations to drive their success.",
+    image: comp1, // Placeholder image URL
+  },
+  {
+    id: 2,
+    title: "Consulting Services",
+    description:
+      "Providing expert consulting to help organizations improve performance with tailored solutions and strategies.",
+    image: comp2, // Placeholder image URL
+  },
+  {
+    id: 3,
+    title: "Training and Workshops",
+    description:
+      "Conducting effective training sessions and workshops to enhance skills and knowledge for professional growth.",
+    image: comp3, // Placeholder image URL
+  },
+];
+  
   return (
-    <div className="md:px-14 px-4 py-16  max-w-screen-2xl mx-auto ">
+    <div
+      className="md:px-14 px-4 py-16 max-w-screen-2xl mx-auto "
+      id="service"
+    >
       <div className="text-center my-8">
         <h1 className="text-4xl text-neutralGray font-semibold mb-2">
           Our Clients
@@ -39,13 +42,13 @@ const Services = () => {
         <p>We have been working with some fortune 500+ clients</p>
 
         {/* our clients company logo */}
-        <div className="my-12 flex items-center  justify-between  ">
-          <img className="h-28" src={comp1} alt="" />
-          <img className="h-28" src={comp2} alt="" />
-          <img className="h-28" src={comp3} alt="" />
-          <img className="h-28" src={comp4} alt="" />
-          <img className="h-28" src={comp5} alt="" />
-          <img className="h-28" src={comp6} alt="" />
+        <div className="flex flex-wrap justify-center gap:4 md:gap-4 lg:gap-36 mt-8">
+          <img className="h-28 object-contain" src={comp1} alt="Component 1" />
+          <img className="h-28 object-contain" src={comp2} alt="Component 2" />
+          <img className="h-28 object-contain" src={comp3} alt="Component 3" />
+          <img className="h-28 object-contain" src={comp4} alt="Component 4" />
+          <img className="h-28 object-contain" src={comp5} alt="Component 5" />
+          <img className="h-28 object-contain" src={comp6} alt="Component 6" />
         </div>
 
         {/* service card */}
@@ -62,10 +65,11 @@ const Services = () => {
           {services.map((service) => (
             <div
               key={service.id}
-              className=" px-4 py-8 text-center md:w-[300px] mx-auto md:h-80 rounded-md shadow cursor-pointer hover:translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300 flex items-center justify-center h-full"
+              className=" bg-blue-50 px-4 py-8 text-center md:w-[300px] mx-auto md:h-80 rounded-md shadow cursor-pointer hover:translate-y-5
+               hover:border-b-4 hover:border-indigo-700 transition-all duration-300 flex items-center justify-center h-full"
             >
               <div>
-                <div className="bg-white h-14 w-14 mx-auto rounded-tl-3xl rounded-br-3xl ">
+                <div className=" h-14 w-14 mx-auto rounded-tl-3xl rounded-br-3xl ">
                   <img src={service.image} className="" />
                 </div>
                 <h4 className="text-2xl font-bold text-neutralGray mb-2 px-2">

@@ -12,11 +12,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        neutralSilver: "orange",
-        neutralDgrey: "blue",
-        brandPrimary: "red",
-        neutralGray: "skyblue",
-        gray900: "gray",
+        neutralSilver: "#E5E1DA",
+        neutralDgrey: "#365486",
+        brandPrimary: "#365486",
+        neutralGray: "#3D3B40",
+        mybg: "#92C7CF",
       },
     },
   },

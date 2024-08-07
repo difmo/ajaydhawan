@@ -6,6 +6,11 @@ import Services from './components/Services';
 import About from './components/About';
 import Product from './components/Product';
 import Blog from './components/Blog';
+import NewsLetter from './components/NewsLetter';
+import { Footer } from 'flowbite-react';
+import Myfooter from './components/Myfooter';
+import ContactUs from './components/ContactUs';
+import FAQ from './components/Faq';
 
 function App() {
   return (
@@ -16,6 +21,10 @@ function App() {
     <About/>
     <Product/>
     <Blog/>
+    <NewsLetter/>
+    <FAQ/>
+    <ContactUs/>
+    <Myfooter/>
     </>
   );
 }
