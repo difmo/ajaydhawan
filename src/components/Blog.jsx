@@ -29,7 +29,7 @@ const Blog = () => {
   ];
 
   return (
-    <div className="px-4 mx-auto my-28 lg:px-14 max-w-screen-2xl" id="faq">
+    <div className="px-4 mx-auto my-28 lg:px-14 max-w-screen-2xl" id="">
       <h2 className="text-4xl text-neutralDgrey font-semibold mb-4 md:w-4/5">
         Empower Your Projects with ZenzoAlpha Consultancy’s IT Developers
       </h2>

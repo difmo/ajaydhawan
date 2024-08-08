@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const FAQItem = ({ question, answer, isOpen, onClick }) => {
   return (
-    <div className="border-b border-neutralGray py-4">
+    <div className="border-b border-neutralGray py-4" id="faq">
       <button
         className="w-full flex items-center text-[#365486] justify-between text-left text-lg font-semibold text-neutralDark hover:text-[#92C7CF] focus:outline-none"
         onClick={onClick}
