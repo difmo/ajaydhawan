@@ -14,7 +14,7 @@ const Home = () => {
 
   return (
     <div className="bg-white border-b-[1px] lg:-mt-2 -mt-2 " id="home">
-      <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto  h-[900px]">
+      <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto min-h-screen h-screen">
         <Carousel
           className="w-full mx-auto"
           onSlideChange={(index) => console.log("onSlideChange()", index)}
@@ -27,7 +27,7 @@ const Home = () => {
                 alt="Header 1"
               />
             </div>
-            <div className="md:w-1/2">
+            <div className="md:w-1/2 pb-32">
               <h1 className="text-xl md:text-4xl lg:text-5xl font-semibold mb-4 text-neutralGray md:w-3/4 leading-snug">
                 Unleash Your Business Potential -
                 <span className="text-brandPrimary leading-snug">
@@ -53,7 +53,7 @@ const Home = () => {
                 alt="Header 2"
               />
             </div>
-            <div className="md:w-1/2">
+            <div className="md:w-1/2 pb-32">
               <h1 className="text-xl md:text-4xl lg:text-5xl font-semibold mb-4 text-neutralGray md:w-3/4 leading-snug">
                 Your Path to Business Excellence -
                 <span className="text-brandPrimary leading-snug">
@@ -79,7 +79,7 @@ const Home = () => {
                 alt="Header 3"
               />
             </div>
-            <div className="md:w-1/2">
+            <div className="md:w-1/2 pb-32">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 text-neutralGray md:w-3/4 leading-snug">
                 Innovate, Grow, Succeed -
                 <span className="text-brandPrimary leading-snug">
