@@ -11,9 +11,13 @@ const Home = () => {
       contactSection.scrollIntoView({ behavior: "smooth" });
     }
   };
-
+//   <div
+//   className="md:px-14 px-4 py-16 max-w-screen-2xl mx-auto "
+//   id="service"
+// >
   return (
-    <div className="bg-white border-b-[1px] lg:-mt-2 -mt-2 " id="home">
+    <div className="bg-white border-b-[1px]  " id="home">
+      
       <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto min-h-screen h-screen">
         <Carousel
           className="w-full mx-auto"
@@ -27,7 +31,7 @@ const Home = () => {
                 alt="Header 1"
               />
             </div>
-            <div className="md:w-1/2 pb-32">
+            <div className="md:w-1/2">
               <h1 className="text-xl md:text-4xl lg:text-5xl font-semibold mb-4 text-neutralGray md:w-3/4 leading-snug">
                 Unleash Your Business Potential -
                 <span className="text-brandPrimary leading-snug">
@@ -53,7 +57,7 @@ const Home = () => {
                 alt="Header 2"
               />
             </div>
-            <div className="md:w-1/2 pb-32">
+            <div className="md:w-1/2">
               <h1 className="text-xl md:text-4xl lg:text-5xl font-semibold mb-4 text-neutralGray md:w-3/4 leading-snug">
                 Your Path to Business Excellence -
                 <span className="text-brandPrimary leading-snug">
@@ -66,7 +70,7 @@ const Home = () => {
                 business forward. Experience growth and achieve your vision with
                 our expert guidance.
               </p>
-              <button onClick={handleOnGetInTouch} className="btn-primary ">
+              <button onClick={handleOnGetInTouch} className="btn-primary">
                 Get In Touch
               </button>
             </div>
@@ -79,7 +83,7 @@ const Home = () => {
                 alt="Header 3"
               />
             </div>
-            <div className="md:w-1/2 pb-32">
+            <div className="md:w-1/2">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 text-neutralGray md:w-3/4 leading-snug">
                 Innovate, Grow, Succeed -
                 <span className="text-brandPrimary leading-snug">
@@ -88,7 +92,7 @@ const Home = () => {
               </h1>
               <p className="text-neutralGray mb-8 text-base">
                 Propel your business to new heights with ZenzoAlpha Consultancy.
-                Our tailored strategies and innovative solutions are designed to
+                Our tailored strategies and innovat ive solutions are designed to
                 drive growth and ensure your success. Partner with us for a
                 future of limitless potential.
               </p>
