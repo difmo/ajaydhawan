@@ -81,7 +81,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="md:w-1/2 mx-auto flex sm:flex-row flex-col sm:items-center justify-around gap-12">
+          <div className="md:w-1/2 mx-auto flex sm:flex-row flex-row sm:items-center justify-around gap-12">
             <div className="space-y-8">
               <div className="flex items-center gap-4">
                 <img className="h-10" src={icon1} alt="Clients Icon" />
@@ -98,7 +98,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="space-y-8">
+            <div className="space-y-8 ">
               <div className="flex items-center gap-4">
                 <img className="h-10" src={icon3} alt="Staff Icon" />
                 <div>
