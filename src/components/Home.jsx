@@ -13,7 +13,7 @@ const Home = () => {
   };
 
   return (
-    <div className="border-b-[1px] lg:-mt-2 -mt-2 " id="home">
+    <div className="border-b-[1px] " id="home">
       <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto min-h-screen h-screen">
         <Carousel
           className="w-full mx-auto"
