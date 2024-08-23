@@ -41,12 +41,12 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: "What is ZenzoAlpha Consultancy?",
-      answer: "ZenzoAlpha Consultancy offers innovative solutions and strategic insights to help businesses achieve their goals and improve their performance.",
+      question: "What is GenzoAlpha Consultancy?",
+      answer: "GenzoAlpha Consultancy offers innovative solutions and strategic insights to help businesses achieve their goals and improve their performance.",
     },
     {
       question: "How can I get in touch with you?",
-      answer: "You can contact us through the 'Get In Touch' button on our homepage or by email at contact@zenzoalpha.com.",
+      answer: "You can contact us through the 'Get In Touch' button on our homepage or by email at contact@GenzoAlpha.com.",
     },
     {
       question: "What services do you offer?",

@@ -25,11 +25,11 @@ const Product = () => {
           </div>
           <div className="mx-auto md:w-3/5">
             <h2 className="mb-4 text-4xl font-semibold text-neutralDgrey md:w-4/5">
-              Find Your Perfect Match with ZenzoAlpha Consultancy
+              Find Your Perfect Match with GenzoAlpha Consultancy
             </h2>
             <p className="mb-8 text-sm md:w-3/4 text-neutralGray">
               Simplify and enhance your payroll processes with our 3rd Party
-              Payroll services. At ZenzoAlpha Consultancy, we manage all facets
+              Payroll services. At GenzoAlpha Consultancy, we manage all facets
               of payroll administration, allowing you to focus on strategic
               growth. Our solutions are designed to ensure accuracy, compliance,
               and efficiency in every payroll cycle. By leveraging our
@@ -53,7 +53,7 @@ const Product = () => {
             </button>
             <h2 className="text-xl font-semibold mb-4">More Information</h2>
             <p>
-            ZenzoAlpha Consultancy offers comprehensive 3rd Party Payroll services designed to simplify and streamline your payroll processes. Our services ensure that you can focus on your core business activities while we handle the complexities of payroll administration.            </p>
+            GenzoAlpha Consultancy offers comprehensive 3rd Party Payroll services designed to simplify and streamline your payroll processes. Our services ensure that you can focus on your core business activities while we handle the complexities of payroll administration.            </p>
           </div>
         </div>
       )}
@@ -71,7 +71,7 @@ const Product = () => {
           <div>
             <p className="mb-8 text-sm leading-8 text-white md:1/2">
               Simplify and enhance your payroll processes with our 3rd Party
-              Payroll services. At ZenzoAlpha Consultancy, we manage all facets
+              Payroll services. At GenzoAlpha Consultancy, we manage all facets
               of payroll administration, allowing you to focus on strategic
               growth. Our solutions are designed to ensure accuracy, compliance,
               and efficiency in every payroll cycle. By leveraging our
@@ -79,7 +79,7 @@ const Product = () => {
               and stay up-to-date with changing regulations.
             </p>
             <h5 className="mb-3 text-xl font-semibold text-white">
-              Effortless Payroll Management with ZenzoAlpha Consultancy
+              Effortless Payroll Management with GenzoAlpha Consultancy
             </h5>
             <div>
               <div className="flex flex-wrap items-center gap-8">

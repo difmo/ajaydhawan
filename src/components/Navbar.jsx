@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo1.png";
 import { Link } from "react-scroll";
 import { FaBars, FaTimes } from "react-icons/fa";
 
@@ -43,7 +43,7 @@ const Navbar = () => {
       <nav
         className={`py-4 lg:px-4 px-4 ${
           isSticky
-            ? "sticky left-0 right-0 border bg-white duration-300 top-0"
+            ? "sticky left-0 right-0 border bg-[#c7c7c7] duration-300 top-0"
             : "top-0"
         }`}
       >
@@ -53,7 +53,7 @@ const Navbar = () => {
             className="text-2xl font-bold flex items-center space-x-3"
           >
             <img className="w-10 inline-block" src={logo} alt="GenzoAlpha Logo" />
-            <span className="text-brandPrimary">ZenzoAlpha</span>
+            <span className="text-brandPrimary">GenzoAlpha</span>
           </a>
 
           {/* nav items for large devices */}

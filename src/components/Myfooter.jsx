@@ -23,7 +23,7 @@ export default function Myfooter() {
             </a>
             <div>
               <p className="text-white">
-              Unleash Your Business Potential -ZenzoAlpha Consultancy</p>
+              Unleash Your Business Potential -GenzoAlpha Consultancy</p>
             </div>  
           </div>
           <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6 ">

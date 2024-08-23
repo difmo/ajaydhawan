@@ -31,11 +31,11 @@ const Home = () => {
               <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-semibold mb-4 text-neutralGray md:w-3/4 leading-snug">
                 Unleash Your Business Potential -
                 <span className="text-brandPrimary leading-snug">
-                  ZenzoAlpha Consultancy
+                  GenzoAlpha Consultancy
                 </span>
               </h1>
               <p className="text-neutralGray mb-8 text-base">
-                Transform your business with ZenzoAlpha Consultancy. Our expert
+                Transform your business with GenzoAlpha Consultancy. Our expert
                 team delivers innovative solutions and strategic insights to
                 drive your success. Elevate your performance and achieve your
                 goals with confidence.
@@ -61,11 +61,11 @@ const Home = () => {
               <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-semibold mb-4 text-neutralGray md:w-3/4 leading-snug">
                 Your Path to Business Excellence -
                 <span className="text-brandPrimary leading-snug">
-                  ZenzoAlpha Consultancy
+                  GenzoAlpha Consultancy
                 </span>
               </h1>
               <p className="text-neutralGray mb-8 text-base">
-                Unlock unparalleled success with ZenzoAlpha Consultancy. We
+                Unlock unparalleled success with GenzoAlpha Consultancy. We
                 specialize in crafting bespoke strategies that propel your
                 business forward. Experience growth and achieve your vision with
                 our expert guidance.
@@ -91,11 +91,11 @@ const Home = () => {
               <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-semibold mb-4 text-neutralGray md:w-3/4 leading-snug">
                 Innovate, Grow, Succeed -
                 <span className="text-brandPrimary leading-snug">
-                  ZenzoAlpha Consultancy
+                  GenzoAlpha Consultancy
                 </span>
               </h1>
               <p className="text-neutralGray mb-8 text-base">
-                Propel your business to new heights with ZenzoAlpha Consultancy.
+                Propel your business to new heights with GenzoAlpha Consultancy.
                 Our tailored strategies and innovative solutions are designed to
                 drive growth and ensure your success. Partner with us for a
                 future of limitless potential.

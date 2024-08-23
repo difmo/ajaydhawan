@@ -24,7 +24,7 @@ const About = () => {
               Leading the Way in Talent Acquisition, Payroll Solutions, and IT Development
             </h2>
             <p className="md:w-3/4 text-sm text-neutralGray mb-8">
-              At ZenzoAlpha Consultancy, we are dedicated to driving your business forward with innovative solutions and expert guidance.
+              At GenzoAlpha Consultancy, we are dedicated to driving your business forward with innovative solutions and expert guidance.
               Our mission is to turn challenges into opportunities through customized services in talent acquisition, 3rd party payroll, and IT development.
               With a commitment to excellence and a focus on results, we partner with you to achieve sustainable growth and success. Discover how our deep industry knowledge and tailored strategies can elevate your business to new heights.
             </p>
@@ -43,9 +43,9 @@ const About = () => {
             >
               &times;
             </button>
-            <h2 className="text-xl font-semibold mb-4">More About ZenzoAlpha Consultancy</h2>
+            <h2 className="text-xl font-semibold mb-4">More About GenzoAlpha Consultancy</h2>
             <p className="mb-4">
-              At ZenzoAlpha Consultancy, our expertise spans across various sectors to provide end-to-end solutions tailored to meet the unique needs of our clients.
+              At GenzoAlpha Consultancy, our expertise spans across various sectors to provide end-to-end solutions tailored to meet the unique needs of our clients.
             </p>
             <h3 className="text-lg font-semibold mb-2">Talent Acquisition:</h3>
             <p className="mb-4">
@@ -77,7 +77,7 @@ const About = () => {
               </span>
             </h2>
             <p className="md:m-3/4 text-sm text-neutralGray mb-8">
-              Discover how ZenzoAlpha Consultancy has made a positive impact on our clients. Read brief success stories showcasing how we’ve helped businesses achieve their goals through expert talent acquisition, seamless payroll solutions, and skilled IT development. Our clients' satisfaction is our top priority, and their success is the ultimate testament to our commitment.
+              Discover how GenzoAlpha Consultancy has made a positive impact on our clients. Read brief success stories showcasing how we’ve helped businesses achieve their goals through expert talent acquisition, seamless payroll solutions, and skilled IT development. Our clients' satisfaction is our top priority, and their success is the ultimate testament to our commitment.
             </p>
           </div>
 

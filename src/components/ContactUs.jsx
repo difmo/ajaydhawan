@@ -61,7 +61,7 @@ const ContactUs = () => {
               Contact Us
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-              Reach Out to Us Today to Explore How ZenzoAlpha Consultancy Can Help You Achieve Your Business Goals and Unlock New Opportunities for Growth. We’re Here to Partner with You Every Step of the Way
+              Reach Out to Us Today to Explore How GenzoAlpha Consultancy Can Help You Achieve Your Business Goals and Unlock New Opportunities for Growth. We’re Here to Partner with You Every Step of the Way
             </p>
           </div>
           <div className="lg:w-1/2 md:w-2/3 mx-auto">

@@ -31,11 +31,11 @@ const Blog = () => {
   return (
     <div className="px-4 mx-auto my-28 lg:px-14 max-w-screen-2xl" id="">
       <h2 className="text-4xl text-neutralDgrey font-semibold mb-4 md:w-4/5">
-        Empower Your Projects with ZenzoAlpha Consultancy’s IT Developers
+        Empower Your Projects with GenzoAlpha Consultancy’s IT Developers
       </h2>
       <p className="md:w-3/4 text-sm text-neutralGray mb-8">
         Unlock the potential of your technology projects with our specialized IT
-        Developer services. ZenzoAlpha Consultancy connects you with highly
+        Developer services. GenzoAlpha Consultancy connects you with highly
         skilled IT developers who excel in various programming languages and
         technologies. Whether you need developers for short-term projects or
         long-term engagements, our talent pool is equipped to deliver innovative
