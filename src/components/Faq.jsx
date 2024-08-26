@@ -4,7 +4,7 @@ const FAQItem = ({ question, answer, isOpen, onClick }) => {
   return (
     <div className="border-b border-neutralGray py-4" id="faq">
       <button
-        className="w-full flex items-center text-[#365486] justify-between text-left text-lg font-semibold text-neutralDark hover:text-[#92C7CF] focus:outline-none"
+        className="w-full flex items-center text-white justify-between text-left text-lg font-semibold text-neutralDark hover:text-[#92C7CF] focus:outline-none"
         onClick={onClick}
       >
         {question}
@@ -26,7 +26,7 @@ const FAQItem = ({ question, answer, isOpen, onClick }) => {
           isOpen ? "max-h-screen" : "max-h-0"
         }`}
       >
-        <p className="mt-2 text-neutralGray">{answer}</p>
+        <p className="mt-2 text-white">{answer}</p>
       </div>
     </div>
   );
@@ -57,7 +57,7 @@ const FAQ = () => {
   return (
     <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto py-16 bg-neutralSilver">
       <div className="flex flex-col items-center justify-center lg:w-2/3 mx-auto">
-        <h2 className="text-3xl font-bold text-brandPrimary mb-8">Frequently Asked Questions</h2>
+        <h2 className="text-3xl font-bold text-white mb-8">Frequently Asked Questions</h2>
         <div className="w-full">
           {faqs.map((faq, index) => (
             <FAQItem

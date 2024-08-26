@@ -70,13 +70,13 @@ const About = () => {
       <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto bg-mybg py-16">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="md:w-1/2">
-            <h2 className="text-4xl text-neutralGray font-semibold mb-4 md:w-4/5">
+            <h2 className="text-4xl text-brandPrimary font-semibold mb-4 md:w-4/5">
               Happy Clients: Success Stories from Our Partners<br />
               <span className="text-white">
                 Grow business with perfect strategy
               </span>
             </h2>
-            <p className="md:m-3/4 text-sm text-neutralGray mb-8">
+            <p className="md:m-3/4 text-sm text-white mb-8">
               Discover how GenzoAlpha Consultancy has made a positive impact on our clients. Read brief success stories showcasing how we’ve helped businesses achieve their goals through expert talent acquisition, seamless payroll solutions, and skilled IT development. Our clients' satisfaction is our top priority, and their success is the ultimate testament to our commitment.
             </p>
           </div>
@@ -86,14 +86,14 @@ const About = () => {
               <div className="flex items-center gap-4">
                 <img className="h-10" src={icon1} alt="Clients Icon" />
                 <div>
-                  <h4 className="text-2xl font-semibold text-neutralGray">101</h4>
+                  <h4 className="text-2xl font-semibold text-white">101</h4>
                   <p className="text-white">Clients</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
                 <img className="h-10" src={icon2} alt="Agencies Icon" />
                 <div>
-                  <h4 className="text-2xl font-semibold text-neutralGray">8</h4>
+                  <h4 className="text-2xl font-semibold text-white">8</h4>
                   <p className="text-white">Agencies</p>
                 </div>
               </div>
@@ -102,14 +102,14 @@ const About = () => {
               <div className="flex items-center gap-4">
                 <img className="h-10" src={icon3} alt="Staff Icon" />
                 <div>
-                  <h4 className="text-2xl font-semibold text-neutralGray">32</h4>
+                  <h4 className="text-2xl font-semibold text-white">32</h4>
                   <p className="text-white">Staff</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
                 <img className="h-10" src={icon4} alt="Job Seekers Icon" />
                 <div>
-                  <h4 className="text-2xl font-semibold text-neutralGray">46</h4>
+                  <h4 className="text-2xl font-semibold text-white">46</h4>
                   <p className="text-white">Job Seekers</p>
                 </div>
               </div>
