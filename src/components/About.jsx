@@ -72,7 +72,7 @@ const About = () => {
           <div className="md:w-1/2">
             <h2 className="text-4xl text-neutralGray font-semibold mb-4 md:w-4/5">
               Happy Clients: Success Stories from Our Partners<br />
-              <span className="text-brandPrimary">
+              <span className="text-white">
                 Grow business with perfect strategy
               </span>
             </h2>
