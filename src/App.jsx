@@ -15,18 +15,18 @@ import FAQ from "./components/Faq";
 function App() {
   return (
     <>
-      <Navbar />
+      <div className="bg-black">
+        <Navbar />
         <Home />
-
-
-      <Services />
-      <About />
-      <Product />
-      <Blog />
-      <NewsLetter />
-      <FAQ />
-      <ContactUs />
-      <Myfooter />
+        <Services />
+        <About />
+        <Product />
+        <Blog />
+        <NewsLetter />
+        <FAQ />
+        <ContactUs />
+        <Myfooter />
+      </div>
     </>
   );
 }

@@ -28,13 +28,13 @@ const Navbar = () => {
     { link: "Service", path: "service" },
     { link: "About", path: "about" },
     { link: "Product", path: "product" },
-    // { link: "Testimonials", path: "testimonials" },
+    { link: "Testimonials", path: "testimonials" },
     { link: "FAQ", path: "faq" },
   ];
   const handleOnGetInTouch = () => {
-    const contactSection = document.getElementById('contact');
+    const contactSection = document.getElementById("contact");
     if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
+      contactSection.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -43,7 +43,7 @@ const Navbar = () => {
       <nav
         className={`py-4 lg:px-4 px-4 ${
           isSticky
-            ? "sticky left-0 right-0 border bg-[#c7c7c7] duration-300 top-0"
+            ? "sticky left-0 right-0  bg-[#000] duration-300 top-0"
             : "top-0"
         }`}
       >
@@ -52,8 +52,17 @@ const Navbar = () => {
             href="#"
             className="text-2xl font-bold flex items-center space-x-3"
           >
-            <img className="w-10 inline-block" src={logo} alt="GenzoAlpha Logo" />
-            <span className="text-brandPrimary">GenzoAlpha</span>
+            <img
+              className="w-10 inline-block"
+              src={logo}
+              alt="GenzoAlpha Logo"
+            />
+            <div className="flex flex-col -space-y-3">
+              <span className="text-brandPrimary">GenzoAlpha</span>
+              <span className=" text-[12px] text-white">
+              Consulting Group
+              </span>
+            </div>
           </a>
 
           {/* nav items for large devices */}
@@ -65,7 +74,7 @@ const Navbar = () => {
                   spy={true}
                   smooth={true}
                   offset={-100}
-                  className="block hover:text-brandPrimary text-base first:font-medium cursor-pointer"
+                  className="block hover:text-brandPrimary text-white text-base first:font-medium cursor-pointer"
                 >
                   {link}
                 </Link>
@@ -74,13 +83,14 @@ const Navbar = () => {
           </ul>
 
           {/* buttons for large devices */}
-          <div
-            className="hidden lg:flex space-x-4 items-center"
-          >
+          <div className="hidden lg:flex space-x-4 items-center">
             {/* <a className="text-brandPrimary first:font-medium hover:text-mybg">
               Login
             </a> */}
-            <button onClick={handleOnGetInTouch} className="bg-brandPrimary text-white py-2 px-4 transition-all duration-300 rounded hover:text-mybg">
+            <button
+              onClick={handleOnGetInTouch}
+              className="bg-brandPrimary text-white py-2 px-4 transition-all duration-300 rounded hover:text-mybg"
+            >
               Get Started
             </button>
           </div>
@@ -114,7 +124,7 @@ const Navbar = () => {
               smooth={true}
               offset={-100}
               className="block text-white hover:text-brandPrimary text-base first:font-medium"
-              onClick={() => setIsMenuOpen(false)} 
+              onClick={() => setIsMenuOpen(false)}
             >
               {link}
             </Link>

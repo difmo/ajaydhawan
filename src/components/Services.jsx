@@ -65,17 +65,17 @@ const services = [
           {services.map((service) => (
             <div
               key={service.id}
-              className=" bg-blue-50 px-4 py-8 text-center md:w-[300px] mx-auto md:h-80 rounded-md shadow cursor-pointer hover:translate-y-5
+              className=" bg-white px-4 py-8 text-center md:w-[300px] mx-auto md:h-80 rounded-md shadow cursor-pointer hover:translate-y-5
                hover:border-b-4 hover:border-indigo-700 transition-all duration-300 flex items-center justify-center h-full"
             >
               <div>
                 <div className=" h-14 w-14 mx-auto rounded-tl-3xl rounded-br-3xl ">
                   <img src={service.image} className="" />
                 </div>
-                <h4 className="text-2xl font-bold text-neutralGray mb-2 px-2">
+                <h4 className="text-2xl font-bold text-brandPrimary mb-2 px-2">
                   {service.title}
                 </h4>
-                <p className="text-sm text-neutralGray">
+                <p className="text-sm text-black">
                   {service.description}
                 </p>
               </div>

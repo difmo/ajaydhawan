@@ -13,9 +13,9 @@ export default {
     extend: {
       colors: {
         neutralSilver: "#000",
-        neutralDgrey: "#7e65cf",
+        neutralDgrey: "#fff",
         brandPrimary: "#7e65cf",
-        neutralGray: "#3D3B40",
+        neutralGray: "#fff",
         mybg: "#000",
       },
     },

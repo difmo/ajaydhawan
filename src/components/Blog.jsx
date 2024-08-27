@@ -54,7 +54,7 @@ const Blog = () => {
               alt={blog.title}
             />
             <div className="px-4 py-8 text-center">
-              <h3 className="mb-3 font-semibold text-neutralGray">
+              <h3 className="mb-3 font-semibold text-black">
                 {blog.title}
               </h3>
               <div className="flex items-center justify-center gap-4">
