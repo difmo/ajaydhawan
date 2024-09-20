@@ -28,7 +28,7 @@ const Navbar = () => {
     { link: "Service", path: "service" },
     { link: "About", path: "about" },
     { link: "Product", path: "product" },
-    { link: "Testimonials", path: "testimonials" },
+    { link: "Contact Us", path: "contact" },
     { link: "FAQ", path: "faq" },
   ];
   const handleOnGetInTouch = () => {
