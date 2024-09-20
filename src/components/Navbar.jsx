@@ -39,12 +39,12 @@ const Navbar = () => {
   };
 
   return (
-    <header className="bg-white md:bg-transparent fixed top-0 left-0 right-0">
+    <header className=" bg-brandPrimary md:bg-transparent fixed top-0 left-0 right-0">
       <nav
         className={`py-4 lg:px-4 px-4 ${
           isSticky
-            ? "sticky left-0 right-0  bg-[#000] duration-300 top-0"
-            : "top-0"
+            ? "sticky left-0 right-0  bg-[#003049] duration-300 top-0"
+            : "top-0 bg-[#003049]"
         }`}
       >
         <div className="flex justify-between items-center text-base gap-8">
@@ -58,7 +58,7 @@ const Navbar = () => {
               alt="GenzoAlpha Logo"
             />
             <div className="flex flex-col -space-y-3">
-              <span className="text-brandPrimary">GenzoAlpha</span>
+              <span className="text-white">GenzoAlpha</span>
               <span className=" text-[12px] text-white">
               Consulting Group
               </span>
@@ -89,7 +89,7 @@ const Navbar = () => {
             </a> */}
             <button
               onClick={handleOnGetInTouch}
-              className="bg-brandPrimary text-white py-2 px-4 transition-all duration-300 rounded hover:text-mybg"
+              className="bg-brandPrimary hover:bg-white text-white py-2 px-4 transition-all duration-300 rounded hover:text-mybg"
             >
               Get Started
             </button>
@@ -99,7 +99,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className="focus:outline-none focus:text-gray-500"
+              className="focus:outline-none focus:text-gray-500 "
             >
               {isMenuOpen ? (
                 <FaTimes size={24} className="text-neutralDgrey" />
@@ -112,7 +112,7 @@ const Navbar = () => {
 
         {/* nav items for mobile devices */}
         <div
-          className={`space-y-4 px-4 mt-16 py-7 bg-brandPrimary ${
+          className={`space-y-4 px-4 mt-16 py-7 bg-brandPrimary/20 ${
             isMenuOpen ? "block fixed top-0 right-0 left-0" : "hidden"
           }`}
         >

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import icon1 from "../assets/bgImages/icon1.png";
-import icon2 from "../assets/bgImages/icon2.png";
-import icon3 from "../assets/bgImages/icon3.png";
-import icon4 from "../assets/bgImages/icon4.png";
-import img from "../assets/bgImages/finalheader.jpg";
+import icon1 from "../assets/logos/client.svg";
+import icon2 from "../assets/logos/agency.svg";
+import icon3 from "../assets/logos/staff.svg";
+import icon4 from "../assets/logos/jobseek.svg";
+import img from "../assets/aboutimg/aboutimg.svg";
 
 const About = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -28,7 +28,7 @@ const About = () => {
               Our mission is to turn challenges into opportunities through customized services in talent acquisition, 3rd party payroll, and IT development.
               With a commitment to excellence and a focus on results, we partner with you to achieve sustainable growth and success. Discover how our deep industry knowledge and tailored strategies can elevate your business to new heights.
             </p>
-            <button className="btn-primary" onClick={handleOpenPopup}>Learn More</button>
+            <button className="btn-primary text-white" onClick={handleOpenPopup}>Learn More</button>
           </div>
         </div>
       </div>
@@ -67,7 +67,7 @@ const About = () => {
       )}
 
       {/* company states */}
-      <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto bg-[#000] border py-16">
+      <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto bg-[#000] border border-gray-700 rounded-lg py-16">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="md:w-1/2">
             <h2 className="text-4xl text-brandPrimary font-semibold mb-4 md:w-4/5">

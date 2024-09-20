@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import img from '../assets/bgImages/headerBg2.png';
-import img4 from '../assets/bgImages/4.png';
+import img from '../assets/aboutimg/thirdparty.svg';
+import img4 from '../assets/aboutimg/thirdparty2.svg';
 import man1 from '../assets/bgImages/man1.png';
 import man2 from '../assets/bgImages/man2.png';
 import man3 from '../assets/bgImages/man3.png';
@@ -60,7 +60,7 @@ const Product = () => {
 
       {/* company states */}
       <div className="px-4 max-w-screen-2xl lg:px-14 mx-auto bg-[#000000] py-16">
-        <h1 className="text-white text-3xl border-b-2 mb-8 pb-4">
+        <h1 className="text-white text-3xl border-b border-gray-700 mb-8 pb-4">
           Third Party Payroll
         </h1>
         <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
@@ -91,12 +91,7 @@ const Product = () => {
                 <img src={man6} className="h-20 cursor-pointer" alt="Customer 6" />
                 <img src={man7} className="h-20 cursor-pointer" alt="Customer 7" />
                 <div>
-                  <a
-                    className="font-bold text-brandPrimary hover:text-neutral-700"
-                    href="/"
-                  >
-                    Meet all customers
-                  </a>
+                 
                 </div>
               </div>
             </div>

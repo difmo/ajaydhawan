@@ -1,8 +1,8 @@
 import React from "react";
 import { Carousel } from "flowbite-react";
-import header1 from "../assets/bgImages/11.png";
-import header2 from "../assets/bgImages/22.png";
-import header3 from "../assets/bgImages/33.png";
+import header1 from "../assets/headerimg/img1.svg";
+import header2 from "../assets/headerimg/img2.svg";
+import header3 from "../assets/headerimg/img3.svg";
 
 const Home = () => {
   const handleOnGetInTouch = () => {
@@ -13,7 +13,7 @@ const Home = () => {
   };
 
   return (
-    <div className="border-b-[1px] " id="home">
+    <div className="border-b border-gray-700 " id="home">
       <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto min-h-screen h-screen">
         <Carousel
           className="w-full mx-auto"
