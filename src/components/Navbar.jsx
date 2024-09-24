@@ -112,7 +112,7 @@ const Navbar = () => {
 
         {/* nav items for mobile devices */}
         <div
-          className={`space-y-4 px-4 mt-16 py-7 bg-brandPrimary${
+          className={`space-y-4 px-4 mt-16 py-7 bg-brandPrimary ${
             isMenuOpen ? "block fixed top-0 right-0 left-0" : "hidden"
           }`}
         >
