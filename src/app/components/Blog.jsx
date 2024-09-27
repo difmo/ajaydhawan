@@ -2,6 +2,7 @@ import React from "react";
 import it1 from "../assets/bgImages/headerBg.jpg";
 import it2 from "../assets/bgImages/it1.png";
 import it3 from "../assets/bgImages/it2.png";
+import Image from "next/image";
 
 const Blog = () => {
   const blogs = [
@@ -48,23 +49,22 @@ const Blog = () => {
             key={blog.id}
             className="relative bg-white shadow-lg rounded-md overflow-hidden"
           >
-            <img
+            <Image
               className="h-52 w-full object-cover transition-transform duration-300 hover:scale-95"
               src={blog.image}
               alt={blog.title}
+              width={500} // Specify width
+              height={300} // Specify height
             />
             <div className="px-4 py-8 text-center">
-              <h3 className="mb-3 font-semibold text-black">
-                {blog.title}
-              </h3>
+              <h3 className="mb-3 font-semibold text-black">{blog.title}</h3>
               <div className="flex items-center justify-center gap-4">
                 <a
                   className="font-bold text-brandPrimary hover:text-neutral-700"
                   href="/"
                 >
-                 {blog.content}
+                  {blog.content}
                 </a>
-               
               </div>
             </div>
           </div>

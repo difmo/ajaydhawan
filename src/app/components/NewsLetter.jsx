@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 
 const NewsLetter = () => {
@@ -11,10 +12,12 @@ const NewsLetter = () => {
       <div className="flex items-center justify-center lg:w-2/3 mx-auto">
         <div className="text-center">
           <h2 className="mb-4 lg:text-5xl text-3xl font-semibold text-neutralDgrey lg:leading-snug">
-            At GenzoAlpha Consultancy, we believe in transforming insights into actionable strategies, guiding businesses towards sustainable growth and unparalleled success.
+            At GenzoAlpha Consultancy, we believe in transforming insights into
+            actionable strategies, guiding businesses towards sustainable growth
+            and unparalleled success.
           </h2>
           <div>
-            <button className="btn-primary" onClick={handleOpenPopup}>
+            <button className=" btn-primary  " onClick={handleOpenPopup}>
               More Info
               <svg
                 width="24"
@@ -47,12 +50,25 @@ const NewsLetter = () => {
             >
               &times;
             </button>
-            <h2 className="text-xl font-semibold mb-4">More About Our Insights and Strategies</h2>
+            <h2 className="text-xl font-semibold mb-4">
+              More About Our Insights and Strategies
+            </h2>
             <p>
-              At GenzoAlpha Consultancy, our approach involves leveraging data-driven insights to craft customized strategies that drive sustainable growth. We focus on understanding your unique business needs and industry dynamics to provide actionable recommendations that align with your goals. Our expertise spans various domains, including market analysis, strategic planning, and operational optimization. By partnering with us, you gain access to a wealth of knowledge and experience designed to help you navigate challenges and seize opportunities for long-term success.
+              At GenzoAlpha Consultancy, our approach involves leveraging
+              data-driven insights to craft customized strategies that drive
+              sustainable growth. We focus on understanding your unique business
+              needs and industry dynamics to provide actionable recommendations
+              that align with your goals. Our expertise spans various domains,
+              including market analysis, strategic planning, and operational
+              optimization. By partnering with us, you gain access to a wealth
+              of knowledge and experience designed to help you navigate
+              challenges and seize opportunities for long-term success.
             </p>
             <p className="mt-4">
-              To learn more about how our strategies can benefit your business, or to discuss your specific needs with one of our experts, please reach out to us. We are committed to helping you achieve your vision through tailored solutions and dedicated support.
+              To learn more about how our strategies can benefit your business,
+              or to discuss your specific needs with one of our experts, please
+              reach out to us. We are committed to helping you achieve your
+              vision through tailored solutions and dedicated support.
             </p>
           </div>
         </div>

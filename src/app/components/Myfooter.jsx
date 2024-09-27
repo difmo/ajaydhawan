@@ -1,4 +1,5 @@
-import { Footer } from "flowbite-react";
+"use client";
+// import { Footer } from "flowbite-react";
 import {
   BsDribbble,
   BsFacebook,
@@ -7,10 +8,12 @@ import {
   BsTwitter,
 } from "react-icons/bs";
 import logo from "../assets/logo.png";
+import { Footer } from "flowbite-react";
+import Image from "next/image";
 
 export default function Myfooter() {
   return (
-    <Footer  className="bg-brandPrimary/20 " container >
+    <Footer className="bg-brandPrimary/20 p-5" container>
       <div className="w-full">
         <div className="grid w-full justify-between lg:px-40 sm:flex sm:justify-between md:flex md:grid-cols-1">
           <div className="space-y-4 mb-8">
@@ -18,13 +21,14 @@ export default function Myfooter() {
               href=""
               className="text-2xl font-bold   flex items-center space-x-3 "
             >
-              <img className="w-10 inline-block items-center" src={logo} />
+              <Image className="w-10 inline-block items-center" src={logo} />
               <span className="text-gray-400">GenzoAlpha Consulting Group</span>
             </a>
             <div>
               <p className="text-gray-400">
-              Unleash Your Business Potential -GenzoAlpha Consultancy</p>
-            </div>  
+                Unleash Your Business Potential -GenzoAlpha Consultancy
+              </p>
+            </div>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6 ">
             <div>
@@ -54,7 +58,12 @@ export default function Myfooter() {
           </div>
         </div>
         <div className="w-full sm:flex sm:items-center sm:justify-between border-t border-gray-700 mt-7  ">
-          <Footer.Copyright href="https://codeservir.com/" className="mt-4" by="Design and Developed by Codeservir Technologies" year={2024}  />
+          <Footer.Copyright
+            href="https://codeservir.com/"
+            className="mt-4"
+            by="Design and Developed by Codeservir Technologies"
+            year={2024}
+          />
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
             <Footer.Icon href="#" icon={BsFacebook} />
             <Footer.Icon href="#" icon={BsInstagram} />

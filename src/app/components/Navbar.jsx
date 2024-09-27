@@ -1,11 +1,16 @@
-import React, { useEffect, useState } from "react";
-import logo from "../assets/logo1.png";
-import { Link } from "react-scroll";
-import { FaBars, FaTimes } from "react-icons/fa";
+"use client"; // For client-side rendering
 
+import React, { useEffect, useState } from "react";
+import Image from "next/image"; // Import Next.js optimized Image
+import Link from "next/link"; // Import Next.js Link
+import { FaBars, FaTimes } from "react-icons/fa";
+import { useRouter } from "next/navigation";
+// import { useRouter } from "next/router"; // For scrolling to sections
+import logo from "../assets/logo1.png";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
+  const router = useRouter();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -24,56 +29,51 @@ const Navbar = () => {
   }, []);
 
   const navItems = [
-    { link: "Home", path: "home" },
-    { link: "Service", path: "service" },
-    { link: "About", path: "about" },
-    { link: "Product", path: "product" },
-    { link: "Contact Us", path: "contact" },
-    { link: "FAQ", path: "faq" },
+    { link: "Home", path: "/" },
+    { link: "Service", path: "/#service" },
+    { link: "About", path: "/#about" },
+    { link: "Product", path: "/#product" },
+    { link: "Contact Us", path: "/#contact" },
+    { link: "FAQ", path: "/#faq" },
   ];
+
   const handleOnGetInTouch = () => {
-    const contactSection = document.getElementById("contact");
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" });
-    }
+    router.push("/#contact");
   };
 
   return (
-    <header className=" bg-brandPrimary md:bg-transparent fixed top-0 left-0 right-0">
+    <header className="bg-brandPrimary md:bg-transparent fixed top-0 left-0 right-0 z-50">
       <nav
         className={`py-4 lg:px-4 px-4 ${
           isSticky
-            ? "sticky left-0 right-0  bg-[#003049] duration-300 top-0"
+            ? "sticky left-0 right-0 bg-[#003049] duration-300 top-0"
             : "top-0 bg-[#003049]"
         }`}
       >
         <div className="flex justify-between items-center text-base gap-8">
-          <a
-            href="#"
+          <Link
+            href="/"
             className="text-2xl font-bold flex items-center space-x-3"
           >
-            <img
+            <Image
               className="w-10 inline-block"
-              src={logo}
+              src={logo} // Ensure logo is in public folder
               alt="GenzoAlpha Logo"
+              width={40}
+              height={40}
             />
             <div className="flex flex-col -space-y-3">
               <span className="text-white">GenzoAlpha</span>
-              <span className=" text-[12px] text-white">
-              Consulting Group
-              </span>
+              <span className="text-[12px] text-white">Consulting Group</span>
             </div>
-          </a>
+          </Link>
 
-          {/* nav items for large devices */}
+          {/* Nav items for large devices */}
           <ul className="md:flex space-x-12 hidden">
             {navItems.map(({ link, path }) => (
               <li key={path}>
                 <Link
-                  to={path}
-                  spy={true}
-                  smooth={true}
-                  offset={-100}
+                  href={path}
                   className="block hover:text-brandPrimary text-white text-base first:font-medium cursor-pointer"
                 >
                   {link}
@@ -82,11 +82,8 @@ const Navbar = () => {
             ))}
           </ul>
 
-          {/* buttons for large devices */}
+          {/* Buttons for large devices */}
           <div className="hidden lg:flex space-x-4 items-center">
-            {/* <a className="text-brandPrimary first:font-medium hover:text-mybg">
-              Login
-            </a> */}
             <button
               onClick={handleOnGetInTouch}
               className="bg-brandPrimary hover:bg-white text-white py-2 px-4 transition-all duration-300 rounded hover:text-mybg"
@@ -95,11 +92,11 @@ const Navbar = () => {
             </button>
           </div>
 
-          {/* menu button for mobile devices */}
+          {/* Menu button for mobile devices */}
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className="focus:outline-none focus:text-gray-500 "
+              className="focus:outline-none focus:text-gray-500"
             >
               {isMenuOpen ? (
                 <FaTimes size={24} className="text-neutralDgrey" />
@@ -110,7 +107,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* nav items for mobile devices */}
+        {/* Nav items for mobile devices */}
         <div
           className={`space-y-4 px-4 mt-16 py-7 bg-brandPrimary ${
             isMenuOpen ? "block fixed top-0 right-0 left-0" : "hidden"
@@ -118,11 +115,8 @@ const Navbar = () => {
         >
           {navItems.map(({ link, path }) => (
             <Link
-              to={path}
+              href={path}
               key={path}
-              spy={true}
-              smooth={true}
-              offset={-100}
               className="block text-white hover:text-brandPrimary text-base first:font-medium"
               onClick={() => setIsMenuOpen(false)}
             >

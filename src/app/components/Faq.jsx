@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 
 const FAQItem = ({ question, answer, isOpen, onClick }) => {
@@ -9,7 +11,9 @@ const FAQItem = ({ question, answer, isOpen, onClick }) => {
       >
         {question}
         <svg
-          className={`w-6 h-6 transform transition-transform duration-300 ${isOpen ? "rotate-180" : "rotate-0"}`}
+          className={`w-6 h-6 transform transition-transform duration-300 ${
+            isOpen ? "rotate-180" : "rotate-0"
+          }`}
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="none"
@@ -42,22 +46,27 @@ const FAQ = () => {
   const faqs = [
     {
       question: "What is GenzoAlpha Consultancy?",
-      answer: "GenzoAlpha Consultancy offers innovative solutions and strategic insights to help businesses achieve their goals and improve their performance.",
+      answer:
+        "GenzoAlpha Consultancy offers innovative solutions and strategic insights to help businesses achieve their goals and improve their performance.",
     },
     {
       question: "How can I get in touch with you?",
-      answer: "You can contact us through the 'Get In Touch' button on our homepage or by email at contact@GenzoAlpha.com.",
+      answer:
+        "You can contact us through the 'Get In Touch' button on our homepage or by email at contact@GenzoAlpha.com.",
     },
     {
       question: "What services do you offer?",
-      answer: "We offer a range of services including consulting, training, and support for membership organizations.",
+      answer:
+        "We offer a range of services including consulting, training, and support for membership organizations.",
     },
   ];
 
   return (
     <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto py-16 bg-neutralSilver">
       <div className="flex flex-col items-center justify-center lg:w-2/3 mx-auto">
-        <h2 className="text-3xl font-bold text-white mb-8">Frequently Asked Questions</h2>
+        <h2 className="text-3xl font-bold text-white mb-8">
+          Frequently Asked Questions
+        </h2>
         <div className="w-full">
           {faqs.map((faq, index) => (
             <FAQItem

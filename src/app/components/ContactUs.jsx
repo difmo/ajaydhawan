@@ -1,10 +1,11 @@
+"use client";
 import React, { useState } from "react";
-import emailjs from 'emailjs-com';
+import emailjs from "emailjs-com";
 
 const ContactUs = () => {
-  const [form, setForm] = useState({ name: '', email: '', message: '' });
-  const [errors, setErrors] = useState({ name: '', email: '', message: '' });
-  const [status, setStatus] = useState('');
+  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [errors, setErrors] = useState({ name: "", email: "", message: "" });
+  const [status, setStatus] = useState("");
 
   const validate = () => {
     const newErrors = {};
@@ -39,16 +40,25 @@ const ContactUs = () => {
     e.preventDefault();
 
     if (validate()) {
-      emailjs.sendForm("service_0g97v9p", "template_kq774f9", e.target, "HK4mIkZI01IBPf94S")
+      emailjs
+        .sendForm(
+          "service_0g97v9p",
+          "template_kq774f9",
+          e.target,
+          "HK4mIkZI01IBPf94S"
+        )
 
-        .then((result) => {
-          setStatus('Message sent successfully!');
-          setForm({ name: '', email: '', message: '' });
-        }, (error) => {
-          setStatus('Message failed to send.');
-        });
+        .then(
+          (result) => {
+            setStatus("Message sent successfully!");
+            setForm({ name: "", email: "", message: "" });
+          },
+          (error) => {
+            setStatus("Message failed to send.");
+          }
+        );
     } else {
-      setStatus('');
+      setStatus("");
     }
   };
 
@@ -61,7 +71,9 @@ const ContactUs = () => {
               Contact Us
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-neutralDgrey">
-              Reach Out to Us Today to Explore How GenzoAlpha Consultancy Can Help You Achieve Your Business Goals and Unlock New Opportunities for Growth. We’re Here to Partner with You Every Step of the Way
+              Reach Out to Us Today to Explore How GenzoAlpha Consultancy Can
+              Help You Achieve Your Business Goals and Unlock New Opportunities
+              for Growth. We’re Here to Partner with You Every Step of the Way
             </p>
           </div>
           <div className="lg:w-1/2 md:w-2/3 mx-auto">
@@ -69,7 +81,10 @@ const ContactUs = () => {
               <div className="flex flex-wrap -m-2">
                 <div className="p-2 w-1/2">
                   <div className="relative">
-                    <label htmlFor="name" className="leading-7 text-sm text-neutralDgrey">
+                    <label
+                      htmlFor="name"
+                      className="leading-7 text-sm text-neutralDgrey"
+                    >
                       Name
                     </label>
                     <input
@@ -80,12 +95,17 @@ const ContactUs = () => {
                       onChange={handleChange}
                       className="w-full bg-brandPrimary/20 rounded border border-gray-700 focus:border-indigo-500 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                     />
-                    {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name}</p>}
+                    {errors.name && (
+                      <p className="text-red-500 text-xs mt-1">{errors.name}</p>
+                    )}
                   </div>
                 </div>
                 <div className="p-2 w-1/2">
                   <div className="relative">
-                    <label htmlFor="email" className="leading-7 text-sm text-neutralDgrey">
+                    <label
+                      htmlFor="email"
+                      className="leading-7 text-sm text-neutralDgrey"
+                    >
                       Email
                     </label>
                     <input
@@ -96,12 +116,19 @@ const ContactUs = () => {
                       onChange={handleChange}
                       className="w-full bg-brandPrimary/20 rounded border border-gray-700 focus:border-indigo-500 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                     />
-                    {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
+                    {errors.email && (
+                      <p className="text-red-500 text-xs mt-1">
+                        {errors.email}
+                      </p>
+                    )}
                   </div>
                 </div>
                 <div className="p-2 w-full">
                   <div className="relative">
-                    <label htmlFor="message" className="leading-7 text-sm text-neutralDgrey">
+                    <label
+                      htmlFor="message"
+                      className="leading-7 text-sm text-neutralDgrey"
+                    >
                       Message
                     </label>
                     <textarea
@@ -111,19 +138,33 @@ const ContactUs = () => {
                       onChange={handleChange}
                       className="w-full bg-brandPrimary/20 rounded border border-gray-700 focus:border-indigo-500 h-32 text-base outline-none text-white py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                     ></textarea>
-                    {errors.message && <p className="text-red-500 text-xs mt-1">{errors.message}</p>}
+                    {errors.message && (
+                      <p className="text-red-500 text-xs mt-1">
+                        {errors.message}
+                      </p>
+                    )}
                   </div>
                 </div>
                 <div className="p-2 w-full">
-                  <button type="submit" className="flex mx-auto border-0 py-2 px-8 btn-primary">
+                  <button
+                    type="submit"
+                    className="flex mx-auto border-0 py-2 px-8 btn-primary"
+                  >
                     Send
                   </button>
                 </div>
-                {status && <div className="p-2 w-full text-center"><p>{status}</p></div>}
+                {status && (
+                  <div className="p-2 w-full text-center">
+                    <p>{status}</p>
+                  </div>
+                )}
                 <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-                  <a className="text-indigo-500">hradmin@genzoalphaconsulting.com, ta_team@genzoalphaconsulting.com </a>
+                  <a className="text-indigo-500">
+                    hradmin@genzoalphaconsulting.com,
+                    ta_team@genzoalphaconsulting.com{" "}
+                  </a>
                   <p className="leading-normal my-5 text-neutralGray">
-                    4/87 Viraj Khand 
+                    4/87 Viraj Khand
                     <br />
                     Gomti Nagar Lucknow 226010
                   </p>
