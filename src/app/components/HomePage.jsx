@@ -94,7 +94,7 @@ const HomePage = () => {
                   onClick={handleOnGetInTouch}
                   className="btn-primary"
                 >
-                  Get In Touch
+                  Get In Touchh
                 </button>
               </div>
             </div>
