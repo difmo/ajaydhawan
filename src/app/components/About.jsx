@@ -105,10 +105,10 @@ const About = () => {
             </h2>
             <p className="md:m-3/4 text-sm text-white mb-8">
               Discover how GenzoAlpha Consultancy has made a positive impact on
-              our clients. Read brief success stories showcasing how we’ve
+              our clients. Read brief success stories showcasing how we have
               helped businesses achieve their goals through expert talent
               acquisition, seamless payroll solutions, and skilled IT
-              development. Our clients' satisfaction is our top priority, and
+              development. Our clients satisfaction is our top priority, and
               their success is the ultimate testament to our commitment.
             </p>
           </div>

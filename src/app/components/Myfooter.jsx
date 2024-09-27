@@ -21,7 +21,11 @@ export default function Myfooter() {
               href=""
               className="text-2xl font-bold   flex items-center space-x-3 "
             >
-              <Image className="w-10 inline-block items-center" src={logo} />
+              <Image
+                className="w-10 inline-block items-center"
+                src={logo}
+                alt="logo"
+              />
               <span className="text-gray-400">GenzoAlpha Consulting Group</span>
             </a>
             <div>
