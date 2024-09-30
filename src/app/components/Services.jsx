@@ -39,15 +39,15 @@ const Services = () => {
   ];
 
   return (
-    <div className="md:px-14 px-4 py-16 max-w-screen-2xl mx-auto" id="service">
-      <div className="text-center my-8">
-        <h1 className="text-4xl md:text-6xl text-neutralGray font-semibold mb-2">
+    <div className="px-4 py-16 mx-auto md:px-14 max-w-screen-2xl" >
+      <div className="my-8 text-center">
+        <h1 className="mb-2 text-4xl font-semibold md:text-6xl text-neutralGray">
           Our Clients
         </h1>
         <p>We have been working with some fortune 500+ clients</p>
 
         {/* Our clients' company logos */}
-        <div className="flex flex-wrap justify-center gap-4 md:gap-4 lg:gap-20 mt-8 bg-brandPrimary/20 px-4 py-20 md:py-40">
+        <div className="flex flex-wrap justify-center gap-4 px-4 py-20 mt-8 md:gap-4 lg:gap-20 bg-brandPrimary/20 md:py-40">
           <Image
             className="h-28 object-contain bg-white rounded-[50%]"
             src={comp1}
@@ -93,22 +93,22 @@ const Services = () => {
         </div>
 
         {/* Service card */}
-        <div className="mt-20 md:w-1/2 mx-auto text-center">
-          <h1 className="text-4xl text-neutralGray font-semibold mb-2">
+        <div className="mx-auto mt-20 text-center md:w-1/2" id="service">
+          <h1 className="mb-2 text-4xl font-semibold text-neutralGray">
             Manage your entire community in a simple system
           </h1>
           <p className="text-white">Who is Nexcent suitable for?</p>
         </div>
 
         {/* Cards */}
-        <div className="mt-14 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:w-11/12 mx-auto gap-12">
+        <div className="grid grid-cols-1 gap-12 mx-auto mt-14 lg:grid-cols-3 md:grid-cols-2 md:w-11/12">
           {services.map((service) => (
             <div
               key={service.id}
-              className="bg-white px-4 py-8 text-center rounded-md shadow cursor-pointer hover:translate-y-5 hover:border-b-4 hover:border-brandPrimary transition-all duration-300 flex items-center justify-center h-full"
+              className="flex items-center justify-center h-full px-4 py-8 text-center transition-all duration-300 bg-white rounded-md shadow cursor-pointer hover:translate-y-5 hover:border-b-4 hover:border-brandPrimary"
             >
               <div>
-                <div className="h-14 w-14 mx-auto rounded-tl-3xl mb-10 rounded-br-3xl">
+                <div className="mx-auto mb-10 h-14 w-14 rounded-tl-3xl rounded-br-3xl">
                   <Image
                     src={service.image}
                     alt={service.title} // Alt text for accessibility
@@ -116,7 +116,7 @@ const Services = () => {
                     height={56} // Specify height for optimization
                   />
                 </div>
-                <h4 className="text-2xl font-bold text-brandPrimary mb-2 px-2">
+                <h4 className="px-2 mb-2 text-2xl font-bold text-brandPrimary">
                   {service.title}
                 </h4>
                 <p className="text-sm text-black">{service.description}</p>
