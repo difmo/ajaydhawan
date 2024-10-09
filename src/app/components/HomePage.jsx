@@ -30,7 +30,7 @@ const HomePage = () => {
 
   return (
     <div className="border-b border-gray-700 mt-10 sm:mt-7" id="home">
-      <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto min-h-screen h-screen">
+      <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto min-h-screen">
         <Slider {...settings}>
           <div>
             <div className="my-16 sm:my-4 md:my-8 py-8 flex flex-col md:flex-row-reverse gap-8 sm:gap-4 items-center justify-center">
