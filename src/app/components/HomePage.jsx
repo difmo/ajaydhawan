@@ -23,9 +23,35 @@ const HomePage = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: true,
+    arrows: true, // Enable arrows
     autoplay: true,
     autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 1024, // For tablet screens and above
+        settings: {
+          arrows: true, // Arrows visible on tablets and above
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768, // For mobile screens (portrait)
+        settings: {
+          arrows: false, // Disable arrows for small screens
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480, // For very small screens (landscape mobile)
+        settings: {
+          arrows: false, // Arrows are hidden on very small screens
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
