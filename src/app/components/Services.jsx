@@ -8,6 +8,10 @@ import comp3 from "../assets/trustedComp/img3.png";
 import comp4 from "../assets/trustedComp/img4.png";
 import comp5 from "../assets/trustedComp/img5.png";
 import comp6 from "../assets/trustedComp/img6.png";
+import comp7 from "../assets/trustedComp/img7.png";
+import comp8 from "../assets/trustedComp/img8.png";
+import comp9 from "../assets/trustedComp/img9.png";
+import comp10 from "../assets/trustedComp/img-1.png";
 
 import member from "../assets/logos/member.svg";
 import service from "../assets/logos/services.svg";
@@ -39,57 +43,139 @@ const Services = () => {
   ];
 
   return (
-    <div className="px-4 py-16 mx-auto md:px-14 max-w-screen-2xl" >
+    <div className="px-4 py-16 mx-auto md:px-14 max-w-screen-2xl">
       <div className="my-8 text-center">
-        <h1 className="mb-2 text-4xl font-semibold md:text-6xl text-neutralGray">
+        <h1 className="mb-2 text-4xl py-3 font-semibold md:text-6xl text-neutralGray">
           Our Clients
         </h1>
-        <p>We have been working with some fortune 500+ clients</p>
+        <p className="pb-4">
+          We have been working with some fortune 500+ clients
+        </p>
 
         {/* Our clients' company logos */}
-        <div className="flex flex-wrap justify-center gap-4 px-4 py-20 mt-8 md:gap-4 lg:gap-20 bg-brandPrimary/20 md:py-40">
-          <Image
-            className="h-28 object-contain bg-white rounded-[50%]"
-            src={comp1}
-            alt="Component 1"
-            width={110} // Specify width for optimizat10n
-            height={100} // Specify height for optimization
-          />
-          <Image
-            className="h-28 object-contain bg-white rounded-[50%]"
-            src={comp2}
-            alt="Component 2"
-            width={110}
-            height={100}
-          />
-          <Image
-            className="h-28 object-contain bg-white rounded-[50%]"
-            src={comp3}
-            alt="Component 3"
-            width={110}
-            height={100}
-          />
-          <Image
-            className="h-28 object-contain bg-white rounded-[50%]"
-            src={comp4}
-            alt="Component 4"
-            width={110}
-            height={100}
-          />
-          <Image
-            className="h-28 object-contain bg-white rounded-[50%]"
-            src={comp5}
-            alt="Component 5"
-            width={110}
-            height={100}
-          />
-          <Image
-            className="h-28 object-contain bg-white rounded-[50%]"
-            src={comp6}
-            alt="Component 6"
-            width={110}
-            height={100}
-          />
+        <div className="grid justify-center   bg-brandPrimary/20 md:py-20">
+          <div className=" grid grid-cols-2 md:grid-cols-5 pt-4  gap-4 px-4 md:gap-4 lg:gap-28">
+            <div>
+              <a href="https://jtdr.ae/" target="blank">
+                <Image
+                  className="h-28 object-contain bg-white px-4 rounded-xl "
+                  src={comp1}
+                  alt="Component 1"
+                  width={110} // Specify width for optimizat10n
+                  height={100} // Specify height for optimization
+                />
+              </a>
+              <p className="py-2 pr-6">JTDR Dubai</p>
+            </div>
+            <div>
+              <a href="https://www.njgroup.in/" target="blank">
+                <Image
+                  className="h-28 object-contain bg-white rounded-xl"
+                  src={comp2}
+                  alt="Component 2"
+                  width={110}
+                  height={90}
+                />{" "}
+              </a>
+              <p className="py-2  pr-6">NJ Group</p>
+            </div>
+            <div>
+              <a href="https://www.ten.com/en " target="blank">
+                <Image
+                  className="h-28 object-contain bg-white rounded-xl px-4"
+                  src={comp3}
+                  alt="Component 3"
+                  width={110}
+                  height={100}
+                />{" "}
+              </a>
+              <p className="py-2  pr-2"> Technip Energies</p>
+            </div>
+            <div>
+              <a href=" https://datamotive.io/" target="blank">
+                <Image
+                  className="h-28 object-contain bg-blue-800 px-2 rounded-xl"
+                  src={comp4}
+                  alt="Component 4"
+                  width={110}
+                  height={100}
+                />{" "}
+              </a>
+              <p className="py-2  pr-2"> Datamotive.io</p>
+            </div>
+            <div>
+              <a href=" https://www.alepo.com/" target="blank">
+                <Image
+                  className="h-28 object-contain bg-white px-2 rounded-xl"
+                  src={comp5}
+                  alt="Component 5"
+                  width={110}
+                  height={100}
+                />{" "}
+              </a>
+              <p className="py-2 pr-2  md:pr-8">AlepoTech</p>
+            </div>
+
+            <div className="">
+              <a href="https://www.onactuate.com/ " target="blank">
+                <Image
+                  className="h-28 object-contain bg-white px-2 rounded-xl"
+                  src={comp6}
+                  alt="Component 6"
+                  width={110}
+                  height={100}
+                />{" "}
+                <p className="py-2  ">Interproductec Labs</p>
+              </a>
+            </div>
+            <div className="">
+              <a href="https://www.mandsconsulting.com/ " target="blank">
+                <Image
+                  className="h-28 object-contain bg-blue-800 px-2 rounded-xl"
+                  src={comp7}
+                  alt="Component 7"
+                  width={110}
+                  height={100}
+                />{" "}
+                <p className="py-2 ">M&S Consulting</p>
+              </a>
+            </div>
+            <div className="">
+              <a href=" https://emeraldpp.com/" target="blank">
+                <Image
+                  className="h-28 object-contain bg-white px-2 rounded-xl"
+                  src={comp8}
+                  alt="Component 8"
+                  width={110}
+                  height={100}
+                />{" "}
+                <p className="py-2 ">Emerald Paper Co.</p>
+              </a>
+            </div>
+            <div className="">
+              <a href="http://www.axumtechnologies.com/ " target="blank">
+                <Image
+                  className="h-28 object-contain bg-white px-2 rounded-xl"
+                  src={comp9}
+                  alt="Component 9"
+                  width={110}
+                  height={100}
+                />{" "}
+                <p className="py-2 pr-6 ">Aksum Tech</p>
+              </a>
+            </div>
+            <div className="">
+              <a href="https://www.primafelicitas.com/ " target="blank">
+                <Image
+                  className="h-28 object-contain bg-white px-2 rounded-xl"
+                  src={comp10}
+                  width={110}
+                  height={100}
+                />{" "}
+                <p className="py-2 pr-4  md:pr-6 ">Primafelicitas</p>
+              </a>
+            </div>
+          </div>
         </div>
 
         {/* Service card */}
