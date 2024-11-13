@@ -5,7 +5,7 @@ import Image from "next/image";
 import comp1 from "../assets/trustedComp/img1.png";
 import comp2 from "../assets/trustedComp/img2.png";
 import comp3 from "../assets/trustedComp/img3.png";
-import comp4 from "../assets/trustedComp/img4.png";
+import comp4 from "../assets/trustedComp/img4.svg";
 import comp5 from "../assets/trustedComp/img5.png";
 import comp6 from "../assets/trustedComp/img6.png";
 import comp7 from "../assets/trustedComp/img7.png";
