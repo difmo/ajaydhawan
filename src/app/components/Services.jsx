@@ -45,7 +45,7 @@ const Services = () => {
   return (
     <div className="px-4 py-16 mx-auto md:px-14 max-w-screen-2xl">
       <div className="my-8 text-center">
-        <h1 className="mb-2 text-4xl py-3 font-semibold md:text-6xl text-neutralGray">
+        <h1 className="py-3 mb-2 text-4xl font-semibold md:text-6xl text-neutralGray">
           Our Clients
         </h1>
         <p className="pb-4">
@@ -53,12 +53,12 @@ const Services = () => {
         </p>
 
         {/* Our clients' company logos */}
-        <div className="grid justify-center   bg-brandPrimary/20 md:py-20">
-          <div className=" grid grid-cols-2 md:grid-cols-5 pt-4  gap-4 px-4 md:gap-4 lg:gap-28">
+        <div className="grid justify-center bg-brandPrimary/20 md:py-20">
+          <div className="grid grid-cols-2 gap-4 px-4 pt-4 md:grid-cols-5 md:gap-4 lg:gap-28">
             <div>
               <a href="https://jtdr.ae/" target="blank">
                 <Image
-                  className="h-28 object-contain bg-white px-4 rounded-xl "
+                  className="object-contain px-4 bg-white h-28 rounded-xl "
                   src={comp1}
                   alt="Component 1"
                   width={110} // Specify width for optimizat10n
@@ -70,68 +70,69 @@ const Services = () => {
             <div>
               <a href="https://www.njgroup.in/" target="blank">
                 <Image
-                  className="h-28 object-contain bg-white rounded-xl"
+                  className="object-contain bg-white h-28 rounded-xl"
                   src={comp2}
                   alt="Component 2"
                   width={110}
                   height={90}
                 />{" "}
               </a>
-              <p className="py-2  pr-6">NJ Group</p>
+              <p className="py-2 pr-6">NJ Group</p>
             </div>
             <div>
               <a href="https://www.ten.com/en " target="blank">
                 <Image
-                  className="h-28 object-contain bg-white rounded-xl px-4"
+                  className="object-contain px-4 bg-white h-28 rounded-xl"
                   src={comp3}
                   alt="Component 3"
                   width={110}
                   height={100}
                 />{" "}
+                {/* dvcshdbcfhj */}
               </a>
-              <p className="py-2  pr-2"> Technip Energies</p>
+              <p className="py-2 pr-2"> Technip Energies</p>
             </div>
             <div>
               <a href=" https://datamotive.io/" target="blank">
                 <Image
-                  className="h-28 object-contain bg-blue-800 px-2 rounded-xl"
+                  className="object-contain px-2 bg-blue-800 h-28 rounded-xl"
                   src={comp4}
                   alt="Component 4"
                   width={110}
                   height={100}
                 />{" "}
               </a>
-              <p className="py-2  pr-2"> Datamotive.io</p>
+              <p className="py-2 pr-2"> Datamotive.io</p>
             </div>
             <div>
               <a href=" https://www.alepo.com/" target="blank">
                 <Image
-                  className="h-28 object-contain bg-white px-2 rounded-xl"
+                  className="object-contain px-2 bg-white h-28 rounded-xl"
                   src={comp5}
                   alt="Component 5"
                   width={110}
                   height={100}
                 />{" "}
               </a>
-              <p className="py-2 pr-2  md:pr-8">AlepoTech</p>
+              <p className="py-2 pr-2 md:pr-8">AlepoTech</p>
             </div>
 
             <div className="">
               <a href="https://www.onactuate.com/ " target="blank">
                 <Image
-                  className="h-28 object-contain bg-white px-2 rounded-xl"
+                  className="object-contain px-2 bg-white h-28 rounded-xl"
                   src={comp6}
                   alt="Component 6"
                   width={110}
                   height={100}
                 />{" "}
-                <p className="py-2  ">Interproductec Labs</p>
+                <p className="py-2 ">Interproductec Labs</p>
               </a>
             </div>
             <div className="">
               <a href="https://www.mandsconsulting.com/ " target="blank">
                 <Image
-                  className="h-28 object-contain bg-blue-800 px-2 rounded-xl"
+                  className="object-contain px-2 bg-blue-800 h-28 rounded-xl"
                   src={comp7}
                   alt="Component 7"
                   width={110}
@@ -143,7 +144,7 @@ const Services = () => {
             <div className="">
               <a href=" https://emeraldpp.com/" target="blank">
                 <Image
-                  className="h-28 object-contain bg-white px-2 rounded-xl"
+                  className="object-contain px-2 bg-white h-28 rounded-xl"
                   src={comp8}
                   alt="Component 8"
                   width={110}
@@ -155,7 +156,7 @@ const Services = () => {
             <div className="">
               <a href="http://www.axumtechnologies.com/ " target="blank">
                 <Image
-                  className="h-28 object-contain bg-white px-2 rounded-xl"
+                  className="object-contain px-2 bg-white h-28 rounded-xl"
                   src={comp9}
                   alt="Component 9"
                   width={110}
@@ -167,12 +168,12 @@ const Services = () => {
             <div className="">
               <a href="https://www.primafelicitas.com/ " target="blank">
                 <Image
-                  className="h-28 object-contain bg-white px-2 rounded-xl"
+                  className="object-contain px-2 bg-white h-28 rounded-xl"
                   src={comp10}
                   width={110}
                   height={100}
                 />{" "}
-                <p className="py-2 pr-4  md:pr-6 ">Primafelicitas</p>
+                <p className="py-2 pr-4 md:pr-6 ">Primafelicitas</p>
               </a>
             </div>
           </div>

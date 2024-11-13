@@ -15,7 +15,7 @@ const ContactUs = () => {
       newErrors.name = "Name is required";
       isValid = false;
     }
-    if (!form.email) {
+    if (!form.email) { 
       newErrors.email = "Email is required";
       isValid = false;
     } else if (!/\S+@\S+\.\S+/.test(form.email)) {
@@ -64,26 +64,26 @@ const ContactUs = () => {
 
   return (
     <div id="contact">
-      <section className="text-gray-700 body-font relative">
+      <section className="relative text-gray-700 body-font">
         <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-col text-center w-full mb-12">
-            <h1 className="sm:text-6xl text-2xl font-medium title-font mb-4 text-brandPrimary">
+          <div className="flex flex-col w-full mb-12 text-center">
+            <h1 className="mb-4 text-2xl font-medium sm:text-6xl title-font text-brandPrimary">
               Contact Us
             </h1>
-            <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-neutralDgrey">
+            <p className="mx-auto text-base leading-relaxed lg:w-2/3 text-neutralDgrey">
               Reach Out to Us Today to Explore How GenzoAlpha Consultancy Can
               Help You Achieve Your Business Goals and Unlock New Opportunities
               for Growth. We’re Here to Partner with You Every Step of the Way
             </p>
           </div>
-          <div className="lg:w-1/2 md:w-2/3 mx-auto">
+          <div className="mx-auto lg:w-1/2 md:w-2/3">
             <form onSubmit={handleSubmit}>
               <div className="flex flex-wrap -m-2">
-                <div className="p-2 w-1/2">
+                <div className="w-1/2 p-2">
                   <div className="relative">
                     <label
                       htmlFor="name"
-                      className="leading-7 text-sm text-neutralDgrey"
+                      className="text-sm leading-7 text-neutralDgrey"
                     >
                       Name
                     </label>
@@ -93,18 +93,18 @@ const ContactUs = () => {
                       name="name"
                       value={form.name}
                       onChange={handleChange}
-                      className="w-full bg-brandPrimary/20 rounded border border-gray-700 focus:border-indigo-500 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                      className="w-full px-3 py-1 text-base leading-8 text-white transition-colors duration-200 ease-in-out border border-gray-700 rounded outline-none bg-brandPrimary/20 focus:border-indigo-500"
                     />
                     {errors.name && (
-                      <p className="text-red-500 text-xs mt-1">{errors.name}</p>
+                      <p className="mt-1 text-xs text-red-500">{errors.name}</p>
                     )}
                   </div>
                 </div>
-                <div className="p-2 w-1/2">
+                <div className="w-1/2 p-2">
                   <div className="relative">
                     <label
                       htmlFor="email"
-                      className="leading-7 text-sm text-neutralDgrey"
+                      className="text-sm leading-7 text-neutralDgrey"
                     >
                       Email
                     </label>
@@ -114,20 +114,20 @@ const ContactUs = () => {
                       name="email"
                       value={form.email}
                       onChange={handleChange}
-                      className="w-full bg-brandPrimary/20 rounded border border-gray-700 focus:border-indigo-500 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                      className="w-full px-3 py-1 text-base leading-8 text-white transition-colors duration-200 ease-in-out border border-gray-700 rounded outline-none bg-brandPrimary/20 focus:border-indigo-500"
                     />
                     {errors.email && (
-                      <p className="text-red-500 text-xs mt-1">
+                      <p className="mt-1 text-xs text-red-500">
                         {errors.email}
                       </p>
                     )}
                   </div>
                 </div>
-                <div className="p-2 w-full">
+                <div className="w-full p-2">
                   <div className="relative">
                     <label
                       htmlFor="message"
-                      className="leading-7 text-sm text-neutralDgrey"
+                      className="text-sm leading-7 text-neutralDgrey"
                     >
                       Message
                     </label>
@@ -136,34 +136,34 @@ const ContactUs = () => {
                       name="message"
                       value={form.message}
                       onChange={handleChange}
-                      className="w-full bg-brandPrimary/20 rounded border border-gray-700 focus:border-indigo-500 h-32 text-base outline-none text-white py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                      className="w-full h-32 px-3 py-1 text-base leading-6 text-white transition-colors duration-200 ease-in-out border border-gray-700 rounded outline-none resize-none bg-brandPrimary/20 focus:border-indigo-500"
                     ></textarea>
                     {errors.message && (
-                      <p className="text-red-500 text-xs mt-1">
+                      <p className="mt-1 text-xs text-red-500">
                         {errors.message}
                       </p>
                     )}
                   </div>
                 </div>
-                <div className="p-2 w-full">
+                <div className="w-full p-2">
                   <button
                     type="submit"
-                    className="flex mx-auto border-0 py-2 px-8 btn-primary"
+                    className="flex px-8 py-2 mx-auto border-0 btn-primary"
                   >
                     Send
                   </button>
                 </div>
                 {status && (
-                  <div className="p-2 w-full text-center">
+                  <div className="w-full p-2 text-center">
                     <p>{status}</p>
                   </div>
                 )}
-                <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+                <div className="w-full p-2 pt-8 mt-8 text-center border-t border-gray-200">
                   <a className="text-indigo-500">
                     hradmin@genzoalphaconsulting.com,
                     ta_team@genzoalphaconsulting.com{" "}
                   </a>
-                  <p className="leading-normal my-5 text-neutralGray">
+                  <p className="my-5 leading-normal text-neutralGray">
                     4/87 Viraj Khand
                     <br />
                     Gomti Nagar Lucknow 226010
