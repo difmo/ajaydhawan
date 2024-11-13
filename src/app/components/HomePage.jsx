@@ -23,30 +23,30 @@ const HomePage = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: true, // Enable arrows
+    arrows: true, 
     autoplay: true,
     autoplaySpeed: 3000,
     responsive: [
       {
-        breakpoint: 1024, // For tablet screens and above
+        breakpoint: 1024,
         settings: {
-          arrows: true, // Arrows visible on tablets and above
+          arrows: true, 
           slidesToShow: 1,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 768, // For mobile screens (portrait)
+        breakpoint: 768,
         settings: {
-          arrows: false, // Disable arrows for small screens
+          arrows: false, 
           slidesToShow: 1,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 480, // For very small screens (landscape mobile)
+        breakpoint: 480, 
         settings: {
-          arrows: false, // Arrows are hidden on very small screens
+          arrows: false, 
           slidesToShow: 1,
           slidesToScroll: 1,
         },
