@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import icon1 from "../assets/logos/video.png";
 import icon2 from "../assets/logos/viwe.png";
-import icon3 from "../assets/logos/pdf.png";
+import icon3 from "../assets/logos/notebook.png";
 import icon4 from "../assets/logos/story.png";
 import img from "../assets/aboutimg/motiva.svg";
 
@@ -17,17 +17,17 @@ const About = () => {
   return (
     <div>
       {/* about text */}
-      <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto my-8" id="about">
+      <div className=" px-4 lg:px-14 max-w-screen-2xl mx-auto bg-white border border-gray-700 rounded-lg py-16" id="about">
         <div className="md:w-11/12 mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
           <div>
             <Image className="w-[600px]" src={img} alt="About" />
           </div>
           <div className="md:w-3/5 mx-auto">
-            <h2 className="text-4xl text-neutralDgrey font-semibold mb-4 md:w-4/5">
+            <h2 className="text-4xl text-black font-semibold mb-4 md:w-4/5">
               From Impossible to Inevitable: Unlocking the Power to Transform
               Challenges into Triumph
             </h2>
-            <p className="md:w-3/4 text-sm text-neutralGray mb-8">
+            <p className="md:w-3/4 text-sm text-black mb-8">
               The idea of the "impossible" is merely a challenge waiting to be
               conquered. Every breakthrough in history, every great achievement,
               was once considered unattainable. But it is the relentless pursuit
@@ -100,17 +100,17 @@ const About = () => {
       )}
 
       {/* video reach and the viwes */}
-      <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto bg-[#000] border border-gray-700 rounded-lg py-16">
+      <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto bg-white border border-gray-700 rounded-lg py-16">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="md:w-1/2">
             <h2 className="text-4xl text-brandPrimary font-semibold mb-4 md:w-4/5">
               Your Journey in Motion: All Videos & Stories at a Glance
               <br />
-              <span className="text-white">
+              <span className="text-black">
                 Grow business with perfect strategy
               </span>
             </h2>
-            <p className="md:m-3/4 text-sm text-white mb-8">
+            <p className="md:m-3/4 text-sm text-black mb-8">
               Indicates that this section aggregates all user-uploaded content
               in one place.Whether short stories, long-form videos, or
               highlights, it covers all formats to ensure nothing is left
@@ -124,15 +124,15 @@ const About = () => {
               <div className="flex items-center gap-4">
                 <Image className="h-10 w-10" src={icon1} alt="Clients Icon" />
                 <div>
-                  <h4 className="text-2xl font-semibold text-white">101</h4>
-                  <p className="text-white">All Videos</p>
+                  <h4 className="text-2xl font-semibold text-black">101</h4>
+                  <p className="text-black">Videos</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
                 <Image className="h-10 w-10" src={icon2} alt="Agencies Icon" />
                 <div>
-                  <h4 className="text-2xl font-semibold text-white">8</h4>
-                  <p className="text-white">Viwers</p>
+                  <h4 className="text-2xl font-semibold text-black">8</h4>
+                  <p className="text-black">Viwers</p>
                 </div>
               </div>
             </div>
@@ -140,8 +140,8 @@ const About = () => {
               <div className="flex items-center gap-4">
                 <Image className="h-10 w-10" src={icon3} alt="Staff Icon" />
                 <div>
-                  <h4 className="text-2xl font-semibold text-white">32</h4>
-                  <p className="text-white">PDF</p>
+                  <h4 className="text-2xl font-semibold text-black">32</h4>
+                  <p className="text-black">Books</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
@@ -151,8 +151,8 @@ const About = () => {
                   alt="Job Seekers Icon"
                 />
                 <div>
-                  <h4 className="text-2xl font-semibold text-white">46</h4>
-                  <p className="text-white">Story</p>
+                  <h4 className="text-2xl font-semibold text-black">46</h4>
+                  <p className="text-black">Story</p>
                 </div>
               </div>
             </div>

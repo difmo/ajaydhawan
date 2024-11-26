@@ -19,7 +19,7 @@ const Product = () => {
   const handleClosePopup = () => setIsPopupOpen(false);
 
   return (
-    <div>
+    <div className=" px-4 lg:px-14 max-w-screen-2xl mx-auto bg-white border border-gray-700 rounded-lg py-16 ">
       {/* About text */}
       <div className="px-4 mx-auto my-8 lg:px-14 max-w-screen-2xl" id="product">
         <div className="flex flex-col items-center justify-between gap-12 mx-auto md:w-11/12 md:flex-row">
@@ -27,10 +27,10 @@ const Product = () => {
             <Image className="w-[600px]" src={img} alt="Product" />
           </div>
           <div className="mx-auto md:w-3/5">
-            <h2 className="mb-4 text-4xl font-semibold text-neutralDgrey md:w-4/5">
+            <h2 className="mb-4 text-4xl font-semibold text-black md:w-4/5">
               Share Your Creativity
             </h2>
-            <p className="mb-8 text-sm md:w-3/4 text-neutralGray">
+            <p className="mb-8 text-sm md:w-3/4 text-black">
               Unleash your imagination and showcase your unique voice! This
               section is dedicated to writers, poets, and storytellers who wish
               to share their handwritten works of art. Whether it’s a heartfelt
@@ -56,10 +56,10 @@ const Product = () => {
       <Image className="w-[600px] max-w-full" src={img2} alt="Product" />
     </div>
     <div className="mx-auto md:w-3/5">
-      <h2 className="mb-4 text-4xl font-semibold text-neutralDgrey md:w-4/5">
+      <h2 className="mb-4 text-4xl font-semibold text-black md:w-4/5">
         Share Your Creativity
       </h2>
-      <p className="mb-8 text-sm md:w-3/4 text-neutralGray">
+      <p className="mb-8 text-sm md:w-3/4 text-black">
         Unleash your imagination and showcase your unique voice! This
         section is dedicated to writers, poets, and storytellers who wish
         to share their handwritten works of art. Whether it’s a heartfelt

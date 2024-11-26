@@ -63,13 +63,13 @@ const ContactUs = () => {
 
   return (
     <div id="contact">
-      <section className="relative text-gray-700 body-font">
-        <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-col w-full mb-12 text-center">
-            <h1 className="mb-4 text-2xl font-medium sm:text-6xl title-font text-brandPrimary">
+      <section className="relative text-gray-700 body-font ">
+        <div className="container px-5 py-24 mx-auto bg-white">
+          <div className="flex flex-col w-full mb-12 text-center ">
+            <h1 className="mb-4 text-2xl font-medium sm:text-6xl title-font text-brandPrimary ">
               Connect with Me
             </h1>
-            <p className="mx-auto text-base leading-relaxed lg:w-2/3 text-neutralDgrey">
+            <p className="mx-auto text-base leading-relaxed lg:w-2/3 text-black">
               Whether you’re looking for inspiration, collaboration, or have a
               question, feel free to reach out. I’m here to share stories,
               insights, and motivational experiences that uplift and empower.
@@ -82,7 +82,7 @@ const ContactUs = () => {
                   <div className="relative">
                     <label
                       htmlFor="name"
-                      className="text-sm leading-7 text-neutralDgrey"
+                      className="text-sm leading-7 text-black"
                     >
                       Full Name
                     </label>
@@ -103,7 +103,7 @@ const ContactUs = () => {
                   <div className="relative">
                     <label
                       htmlFor="email"
-                      className="text-sm leading-7 text-neutralDgrey"
+                      className="text-sm leading-7 text-black"
                     >
                       Email Address
                     </label>
@@ -126,7 +126,7 @@ const ContactUs = () => {
                   <div className="relative">
                     <label
                       htmlFor="message"
-                      className="text-sm leading-7 text-neutralDgrey"
+                      className="text-sm leading-7 text-black"
                     >
                       Your Message
                     </label>
@@ -157,7 +157,10 @@ const ContactUs = () => {
                     <p>{status}</p>
                   </div>
                 )}
-                <div className="w-full p-2 pt-8 mt-8 text-center border-t border-gray-200">
+
+
+
+                <div className="w-full p-2 pt-8 mt-8 bg-black text-center border-t border-gray-200">
                   <a className="text-indigo-500">
                     contact@inspirationspeaker.com
                   </a>

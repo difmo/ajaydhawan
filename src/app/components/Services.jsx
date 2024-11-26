@@ -43,7 +43,7 @@ const Services = () => {
   ];
 
   return (
-    <div className="px-4 py-16 mx-auto md:px-14 max-w-screen-2xl">
+    <div className="px-4 py-16 mx-auto md:px-14 max-w-screen-2xl ">
       <div className="my-8 text-center">
         <h1 className="py-3 mb-2 text-4xl font-semibold md:text-6xl text-neutralGray">
         Inspire, Connect, Transform: Join Us Across Platforms
