@@ -2,11 +2,11 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import icon1 from "../assets/logos/client.svg";
-import icon2 from "../assets/logos/agency.svg";
-import icon3 from "../assets/logos/staff.svg";
-import icon4 from "../assets/logos/jobseek.svg";
-import img from "../assets/aboutimg/aboutimg.svg";
+import icon1 from "../assets/logos/video.png";
+import icon2 from "../assets/logos/viwe.png";
+import icon3 from "../assets/logos/pdf.png";
+import icon4 from "../assets/logos/story.png";
+import img from "../assets/aboutimg/motiva.svg";
 
 const About = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -24,24 +24,25 @@ const About = () => {
           </div>
           <div className="md:w-3/5 mx-auto">
             <h2 className="text-4xl text-neutralDgrey font-semibold mb-4 md:w-4/5">
-              Leading the Way in Talent Acquisition, Payroll Solutions, and IT
-              Development
+              From Impossible to Inevitable: Unlocking the Power to Transform
+              Challenges into Triumph
             </h2>
             <p className="md:w-3/4 text-sm text-neutralGray mb-8">
-              At GenzoAlpha Consultancy, we are dedicated to driving your
-              business forward with innovative solutions and expert guidance.
-              Our mission is to turn challenges into opportunities through
-              customized services in talent acquisition, 3rd party payroll, and
-              IT development. With a commitment to excellence and a focus on
-              results, we partner with you to achieve sustainable growth and
-              success. Discover how our deep industry knowledge and tailored
-              strategies can elevate your business to new heights.
+              The idea of the "impossible" is merely a challenge waiting to be
+              conquered. Every breakthrough in history, every great achievement,
+              was once considered unattainable. But it is the relentless pursuit
+              of solutions, the courage to try, and the belief that change is
+              possible that turns the impossible into the possible. It's not
+              about avoiding obstacles, but about finding ways to overcome them.
+              Every small step, every effort, builds a bridge from doubt to
+              success. If you can envision it, you can achieve it — because what
+              was once impossible is only the beginning of what you can create..
             </p>
             <button
-              className="btn-primary text-white"
+              className=" btn-primary  text-white"
               onClick={handleOpenPopup}
             >
-              Learn More
+              Read More
             </button>
           </div>
         </div>
@@ -58,19 +59,20 @@ const About = () => {
               &times;
             </button>
             <h2 className="text-xl font-semibold mb-4">
-              More About GenzoAlpha Consultancy
+              More About Dhawan's Thoughts
             </h2>
             <p className="mb-4">
-              At GenzoAlpha Consultancy, our expertise spans across various
-              sectors to provide end-to-end solutions tailored to meet the
-              unique needs of our clients.
+              Motivation Motivation: 1- Intrinsic Motivation: Comes from within
+              (e.g., pursuing hobbies or personal growth). 2- Extrinsic
+              Motivation: Comes from external rewards (e.g., money,
+              recognition).
             </p>
             <h3 className="text-lg font-semibold mb-2">Talent Acquisition:</h3>
             <p className="mb-4">
-              Our talent acquisition services are designed to help businesses
-              find the right talent efficiently. We leverage a network of
-              industry contacts and cutting-edge tools to source and recruit top
-              candidates.
+              Thought Processes: 1- Critical Thinking: Analyzing situations
+              objectively to make better decisions. 2- Creative Thinking:
+              Generating new ideas and innovative solutions. 3- Positive
+              Thinking: Reframing challenges as opportunities.
             </p>
             <h3 className="text-lg font-semibold mb-2">Payroll Solutions:</h3>
             <p className="mb-4">
@@ -80,69 +82,77 @@ const About = () => {
             </p>
             <h3 className="text-lg font-semibold mb-2">IT Development:</h3>
             <p className="mb-4">
-              We offer IT development services that include software solutions,
-              systems integration, and IT consulting to enhance operational
-              efficiency and support your business objectives.
+              1- Self-Awareness: Understand your strengths, weaknesses, and
+              emotions. 
+              2- Communication Skills: Practice active listening and
+              clear expression.
+              3- Confidence Building: Set small goals and
+              celebrate achievements. 
+              4- Emotional Intelligence (EQ): Develop
+              empathy, self-regulation, and social skills. 
+              5- Time Management:Prioritize tasks to maximize productivity.
             </p>
             <p>
-              For a more detailed discussion about how we can assist your
-              business, please do not hesitate to reach out to us.
+            "Success is not final, failure is not fatal: it is the courage to continue that counts." – Winston Churchill
             </p>
           </div>
         </div>
       )}
 
-      {/* company states */}
+      {/* video reach and the viwes */}
       <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto bg-[#000] border border-gray-700 rounded-lg py-16">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="md:w-1/2">
             <h2 className="text-4xl text-brandPrimary font-semibold mb-4 md:w-4/5">
-              Happy Clients: Success Stories from Our Partners
+              Your Journey in Motion: All Videos & Stories at a Glance
               <br />
               <span className="text-white">
                 Grow business with perfect strategy
               </span>
             </h2>
             <p className="md:m-3/4 text-sm text-white mb-8">
-              Discover how GenzoAlpha Consultancy has made a positive impact on
-              our clients. Read brief success stories showcasing how we have
-              helped businesses achieve their goals through expert talent
-              acquisition, seamless payroll solutions, and skilled IT
-              development. Our clients satisfaction is our top priority, and
-              their success is the ultimate testament to our commitment.
+              Indicates that this section aggregates all user-uploaded content
+              in one place.Whether short stories, long-form videos, or
+              highlights, it covers all formats to ensure nothing is left
+              out.Suggests a well-organized layout, making it easy for users to
+              locate specific content.
             </p>
           </div>
 
           <div className="md:w-1/2 mx-auto flex sm:flex-row flex-row sm:items-center justify-around gap-12">
             <div className="space-y-8">
               <div className="flex items-center gap-4">
-                <Image className="h-10" src={icon1} alt="Clients Icon" />
+                <Image className="h-10 w-10" src={icon1} alt="Clients Icon" />
                 <div>
                   <h4 className="text-2xl font-semibold text-white">101</h4>
-                  <p className="text-white">Clients</p>
+                  <p className="text-white">All Videos</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
-                <Image className="h-10" src={icon2} alt="Agencies Icon" />
+                <Image className="h-10 w-10" src={icon2} alt="Agencies Icon" />
                 <div>
                   <h4 className="text-2xl font-semibold text-white">8</h4>
-                  <p className="text-white">Agencies</p>
+                  <p className="text-white">Viwers</p>
                 </div>
               </div>
             </div>
             <div className="space-y-8 ">
               <div className="flex items-center gap-4">
-                <Image className="h-10" src={icon3} alt="Staff Icon" />
+                <Image className="h-10 w-10" src={icon3} alt="Staff Icon" />
                 <div>
                   <h4 className="text-2xl font-semibold text-white">32</h4>
-                  <p className="text-white">Staff</p>
+                  <p className="text-white">PDF</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
-                <Image className="h-10" src={icon4} alt="Job Seekers Icon" />
+                <Image
+                  className="h-10 w-10"
+                  src={icon4}
+                  alt="Job Seekers Icon"
+                />
                 <div>
                   <h4 className="text-2xl font-semibold text-white">46</h4>
-                  <p className="text-white">Job Seekers</p>
+                  <p className="text-white">Story</p>
                 </div>
               </div>
             </div>

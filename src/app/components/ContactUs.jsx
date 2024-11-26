@@ -12,18 +12,18 @@ const ContactUs = () => {
     let isValid = true;
 
     if (!form.name) {
-      newErrors.name = "Name is required";
+      newErrors.name = "Please enter your full name.";
       isValid = false;
     }
-    if (!form.email) { 
-      newErrors.email = "Email is required";
+    if (!form.email) {
+      newErrors.email = "Your email address is required.";
       isValid = false;
     } else if (!/\S+@\S+\.\S+/.test(form.email)) {
-      newErrors.email = "Email is invalid";
+      newErrors.email = "Please enter a valid email address.";
       isValid = false;
     }
     if (!form.message) {
-      newErrors.message = "Message is required";
+      newErrors.message = "A message is required.";
       isValid = false;
     }
 
@@ -47,14 +47,13 @@ const ContactUs = () => {
           e.target,
           "HK4mIkZI01IBPf94S"
         )
-
         .then(
           (result) => {
-            setStatus("Message sent successfully!");
+            setStatus("Thank you for reaching out! I will get back to you soon.");
             setForm({ name: "", email: "", message: "" });
           },
           (error) => {
-            setStatus("Message failed to send.");
+            setStatus("Oops! Something went wrong. Please try again.");
           }
         );
     } else {
@@ -68,12 +67,12 @@ const ContactUs = () => {
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-col w-full mb-12 text-center">
             <h1 className="mb-4 text-2xl font-medium sm:text-6xl title-font text-brandPrimary">
-              Contact Us
+              Connect with Me
             </h1>
             <p className="mx-auto text-base leading-relaxed lg:w-2/3 text-neutralDgrey">
-              Reach Out to Us Today to Explore How GenzoAlpha Consultancy Can
-              Help You Achieve Your Business Goals and Unlock New Opportunities
-              for Growth. We’re Here to Partner with You Every Step of the Way
+              Whether you’re looking for inspiration, collaboration, or have a
+              question, feel free to reach out. I’m here to share stories,
+              insights, and motivational experiences that uplift and empower.
             </p>
           </div>
           <div className="mx-auto lg:w-1/2 md:w-2/3">
@@ -85,7 +84,7 @@ const ContactUs = () => {
                       htmlFor="name"
                       className="text-sm leading-7 text-neutralDgrey"
                     >
-                      Name
+                      Full Name
                     </label>
                     <input
                       type="text"
@@ -93,7 +92,7 @@ const ContactUs = () => {
                       name="name"
                       value={form.name}
                       onChange={handleChange}
-                      className="w-full px-3 py-1 text-base leading-8 text-white transition-colors duration-200 ease-in-out border border-gray-700 rounded outline-none bg-brandPrimary/20 focus:border-indigo-500"
+                      className="w-full px-3 py-1 text-base leading-8 text-black transition-colors duration-200 ease-in-out border border-gray-700 rounded outline-none bg-white focus:border-indigo-500"
                     />
                     {errors.name && (
                       <p className="mt-1 text-xs text-red-500">{errors.name}</p>
@@ -106,7 +105,7 @@ const ContactUs = () => {
                       htmlFor="email"
                       className="text-sm leading-7 text-neutralDgrey"
                     >
-                      Email
+                      Email Address
                     </label>
                     <input
                       type="email"
@@ -114,7 +113,7 @@ const ContactUs = () => {
                       name="email"
                       value={form.email}
                       onChange={handleChange}
-                      className="w-full px-3 py-1 text-base leading-8 text-white transition-colors duration-200 ease-in-out border border-gray-700 rounded outline-none bg-brandPrimary/20 focus:border-indigo-500"
+                      className="w-full px-3 py-1 text-base leading-8 text-black transition-colors duration-200 ease-in-out border border-gray-700 rounded outline-none bg-white focus:border-indigo-500"
                     />
                     {errors.email && (
                       <p className="mt-1 text-xs text-red-500">
@@ -129,14 +128,14 @@ const ContactUs = () => {
                       htmlFor="message"
                       className="text-sm leading-7 text-neutralDgrey"
                     >
-                      Message
+                      Your Message
                     </label>
                     <textarea
                       id="message"
                       name="message"
                       value={form.message}
                       onChange={handleChange}
-                      className="w-full h-32 px-3 py-1 text-base leading-6 text-white transition-colors duration-200 ease-in-out border border-gray-700 rounded outline-none resize-none bg-brandPrimary/20 focus:border-indigo-500"
+                      className="w-full h-32 px-3 py-1 text-base leading-6 text-black transition-colors duration-200 ease-in-out border border-gray-700 rounded outline-none resize-none bg-white focus:border-indigo-500"
                     ></textarea>
                     {errors.message && (
                       <p className="mt-1 text-xs text-red-500">
@@ -150,7 +149,7 @@ const ContactUs = () => {
                     type="submit"
                     className="flex px-8 py-2 mx-auto border-0 btn-primary"
                   >
-                    Send
+                    Send Message
                   </button>
                 </div>
                 {status && (
@@ -160,18 +159,13 @@ const ContactUs = () => {
                 )}
                 <div className="w-full p-2 pt-8 mt-8 text-center border-t border-gray-200">
                   <a className="text-indigo-500">
-                    hradmin@genzoalphaconsulting.com,
-                    ta_team@genzoalphaconsulting.com{" "}
+                    contact@inspirationspeaker.com
                   </a>
                   <p className="my-5 leading-normal text-neutralGray">
-                    4/87 Viraj Khand
+                    Inspiring You from the Heart of the City
                     <br />
-                    Gomti Nagar Lucknow 226010
+                    New York, NY 10001
                   </p>
-                  <span className="inline-flex">
-                    {/* Social media icons */}
-                    {/* ... */}
-                  </span>
                 </div>
               </div>
             </form>

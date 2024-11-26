@@ -8,9 +8,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        neutralSilver: "#000",
+        neutralSilver: "#0000",
         neutralDgrey: "#fff",
-        brandPrimary: "#11baf9",
+        brandPrimary: "#FF4200",
         neutralGray: "#fff",
         mybg: "#003049",
       },

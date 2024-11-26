@@ -45,19 +45,19 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: "What is GenzoAlpha Consultancy?",
+      question: "What type of content do you share on YouTube?",
       answer:
-        "GenzoAlpha Consultancy offers innovative solutions and strategic insights to help businesses achieve their goals and improve their performance.",
+        "We share thought-provoking videos, motivational talks, and actionable advice to inspire personal growth and success.",
     },
     {
-      question: "How can I get in touch with you?",
+      question: "How can I stay updated with your Instagram posts?",
       answer:
-        "You can contact us through the 'Get In Touch' button on our homepage or by email at contact@GenzoAlpha.com.",
+        "Follow us on Instagram to receive daily motivational quotes, uplifting visuals, and engaging content designed to keep you inspired every day",
     },
     {
-      question: "What services do you offer?",
+      question: "Are your platforms free to access?",
       answer:
-        "We offer a range of services including consulting, training, and support for membership organizations.",
+        "Yes! All our content on YouTube, Instagram, and WhatsApp is free. Just subscribe, follow, or join to start your journey toward positivity and growth.",
     },
   ];
 

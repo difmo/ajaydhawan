@@ -6,6 +6,7 @@ import {
   BsGithub,
   BsInstagram,
   BsTwitter,
+  BsYoutube,
 } from "react-icons/bs";
 import logo from "../assets/logo.png";
 import { Footer } from "flowbite-react";
@@ -13,7 +14,7 @@ import Image from "next/image";
 
 export default function Myfooter() {
   return (
-    <Footer className="bg-brandPrimary/20 p-5" container>
+    <Footer className="bg-gray-900 p-5" container>
       <div className="w-full">
         <div className="grid w-full justify-between lg:px-40 sm:flex sm:justify-between md:flex md:grid-cols-1">
           <div className="space-y-4 mb-8">
@@ -21,17 +22,16 @@ export default function Myfooter() {
               href=""
               className="text-2xl font-bold   flex items-center space-x-3 "
             >
-              <Image
+              {/* <Image
                 className="w-10 inline-block items-center"
                 src={logo}
                 alt="logo"
-              />
-              <span className="text-gray-400">GenzoAlpha Consulting Group</span>
+              /> */}
+              <span className="text-gray-400">Dhawan's Dynamic Thoughts</span>
             </a>
             <div>
               <p className="text-gray-400">
-                Unleash Your Business Potential -GenzoAlpha Consultancy
-              </p>
+              "Fuel your dreams, one step at a time."              </p>
             </div>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6 ">
@@ -46,6 +46,7 @@ export default function Myfooter() {
             <div>
               <Footer.Title title="Follow us" />
               <Footer.LinkGroup col>
+              <Footer.Link href="#">YouTube</Footer.Link>
                 <Footer.Link href="#">Instagram</Footer.Link>
                 <Footer.Link href="#">Facebook</Footer.Link>
                 <Footer.Link href="#">Twitter</Footer.Link>
@@ -69,6 +70,7 @@ export default function Myfooter() {
             year={2024}
           />
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
+            <Footer.Icon href="#" icon={BsYoutube} />
             <Footer.Icon href="#" icon={BsFacebook} />
             <Footer.Icon href="#" icon={BsInstagram} />
             <Footer.Icon href="#" icon={BsTwitter} />

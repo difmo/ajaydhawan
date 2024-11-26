@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import img from "../assets/aboutimg/thirdparty.svg";
-import img4 from "../assets/aboutimg/thirdparty2.svg";
+import img from "../assets/aboutimg/purplebook.jpg";
+import img2 from "../assets/aboutimg/bookblue.jpg";
 import man1 from "../assets/bgImages/man1.png";
 import man2 from "../assets/bgImages/man2.png";
 import man3 from "../assets/bgImages/man3.png";
@@ -28,23 +28,56 @@ const Product = () => {
           </div>
           <div className="mx-auto md:w-3/5">
             <h2 className="mb-4 text-4xl font-semibold text-neutralDgrey md:w-4/5">
-              Find Your Perfect Match with GenzoAlpha Consultancy
+              Share Your Creativity
             </h2>
             <p className="mb-8 text-sm md:w-3/4 text-neutralGray">
-              Simplify and enhance your payroll processes with our 3rd Party
-              Payroll services. At GenzoAlpha Consultancy, we manage all facets
-              of payroll administration, allowing you to focus on strategic
-              growth. Our solutions are designed to ensure accuracy, compliance,
-              and efficiency in every payroll cycle. By leveraging our
-              expertise, you can minimize administrative burdens, reduce errors,
-              and stay up-to-date with changing regulations.
+              Unleash your imagination and showcase your unique voice! This
+              section is dedicated to writers, poets, and storytellers who wish
+              to share their handwritten works of art. Whether it’s a heartfelt
+              poem, an inspiring story, or any creative expression, this is your
+              platform to let the world see your talent. Upload your handwritten
+              pieces, and let your creativity inspire and connect with others.
+              Every story matters, every poem resonates, and every word has the
+              power to make an impact. Join us in celebrating the beauty of
+              handwritten expressions!
             </p>
             <button className="btn-primary" onClick={handleOpenPopup}>
-              Learn More
+              Get Your Copy
             </button>
           </div>
         </div>
       </div>
+
+
+     
+      <div className="px-4 mx-auto my-8 lg:px-14 max-w-screen-2xl" id="product">
+  <div className="flex flex-col items-center justify-between gap-12 mx-auto md:w-11/12 md:flex-row-reverse"> {/* Changed to flex-row-reverse */}
+    <div>
+      <Image className="w-[600px] max-w-full" src={img2} alt="Product" />
+    </div>
+    <div className="mx-auto md:w-3/5">
+      <h2 className="mb-4 text-4xl font-semibold text-neutralDgrey md:w-4/5">
+        Share Your Creativity
+      </h2>
+      <p className="mb-8 text-sm md:w-3/4 text-neutralGray">
+        Unleash your imagination and showcase your unique voice! This
+        section is dedicated to writers, poets, and storytellers who wish
+        to share their handwritten works of art. Whether it’s a heartfelt
+        poem, an inspiring story, or any creative expression, this is your
+        platform to let the world see your talent. Upload your handwritten
+        pieces, and let your creativity inspire and connect with others.
+        Every story matters, every poem resonates, and every word has the
+        power to make an impact. Join us in celebrating the beauty of
+        handwritten expressions!
+      </p>
+      <button className="btn-primary py-3 px-6" onClick={handleOpenPopup}>
+        Get Your Copy
+      </button>
+    </div>
+  </div>
+</div>
+
+
 
       {/* Popup */}
       {isPopupOpen && (
@@ -69,70 +102,70 @@ const Product = () => {
       )}
 
       {/* Company states */}
-      <div className="px-4 max-w-screen-2xl lg:px-14 mx-auto bg-[#000000] py-16">
+      {/* <div className="px-4 max-w-screen-2xl lg:px-14 mx-auto bg-[#000000] py-16">
         <h1 className="text-white text-3xl border-b border-gray-700 mb-8 pb-4">
           Third Party Payroll
         </h1>
         <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
           <div>
             <Image src={img4} alt="Third Party Payroll" />
-          </div>
+          </div> */}
 
-          <div>
-            <p className="mb-8 text-sm leading-8 text-white">
-              Simplify and enhance your payroll processes with our 3rd Party
-              Payroll services. At GenzoAlpha Consultancy, we manage all facets
-              of payroll administration, allowing you to focus on strategic
-              growth. Our solutions are designed to ensure accuracy, compliance,
-              and efficiency in every payroll cycle. By leveraging our
-              expertise, you can minimize administrative burdens, reduce errors,
-              and stay up-to-date with changing regulations.
-            </p>
-            <h5 className="mb-3 text-xl font-semibold text-white">
-              Effortless Payroll Management with GenzoAlpha Consultancy
-            </h5>
-            <div>
-              <div className="flex flex-wrap items-center gap-8">
-                <Image
-                  src={man1}
-                  className="h-20 w-20 cursor-pointer"
-                  alt="Customer 1"
-                />
-                <Image
-                  src={man2}
-                  className="h-20 w-20 cursor-pointer"
-                  alt="Customer 2"
-                />
-                <Image
-                  src={man3}
-                  className="h-20 w-20 cursor-pointer"
-                  alt="Customer 3"
-                />
-                <Image
-                  src={man4}
-                  className="h-20 w-20 cursor-pointer"
-                  alt="Customer 4"
-                />
-                <Image
-                  src={man5}
-                  className="h-20 w-20 cursor-pointer"
-                  alt="Customer 5"
-                />
-                <Image
-                  src={man6}
-                  className="h-20 w-20 cursor-pointer"
-                  alt="Customer 6"
-                />
-                <Image
-                  src={man7}
-                  className="h-20 w-20 cursor-pointer"
-                  alt="Customer 7"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+              {/* <div>
+                <p className="mb-8 text-sm leading-8 text-white">
+                  Simplify and enhance your payroll processes with our 3rd Party
+                  Payroll services. At GenzoAlpha Consultancy, we manage all facets
+                  of payroll administration, allowing you to focus on strategic
+                  growth. Our solutions are designed to ensure accuracy, compliance,
+                  and efficiency in every payroll cycle. By leveraging our
+                  expertise, you can minimize administrative burdens, reduce errors,
+                  and stay up-to-date with changing regulations.
+                </p>
+                <h5 className="mb-3 text-xl font-semibold text-white">
+                  Effortless Payroll Management with GenzoAlpha Consultancy
+                </h5>
+                <div>
+                  <div className="flex flex-wrap items-center gap-8">
+                    <Image
+                      src={man1}
+                      className="h-20 w-20 cursor-pointer"
+                      alt="Customer 1"
+                    />
+                    <Image
+                      src={man2}
+                      className="h-20 w-20 cursor-pointer"
+                      alt="Customer 2"
+                    />
+                    <Image
+                      src={man3}
+                      className="h-20 w-20 cursor-pointer"
+                      alt="Customer 3"
+                    />
+                    <Image
+                      src={man4}
+                      className="h-20 w-20 cursor-pointer"
+                      alt="Customer 4"
+                    />
+                    <Image
+                      src={man5}
+                      className="h-20 w-20 cursor-pointer"
+                      alt="Customer 5"
+                    />
+                    <Image
+                      src={man6}
+                      className="h-20 w-20 cursor-pointer"
+                      alt="Customer 6"
+                    />
+                    <Image
+                      src={man7}
+                      className="h-20 w-20 cursor-pointer"
+                      alt="Customer 7"
+                    />
+                  </div>
+                </div>
+              </div> */}
+        {/* </div>
+      </div> */}
     </div>
   );
 };

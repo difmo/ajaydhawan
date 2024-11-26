@@ -4,7 +4,7 @@ import Services from "./components/Services";
 import About from "./components/About";
 import Product from "./components/Product";
 import Blog from "./components/Blog";
-import NewsLetter from "./components/NewsLetter";
+import NewsLetter from "./components/BlogSection";
 import FAQ from "./components/Faq";
 import ContactUs from "./components/ContactUs";
 import Myfooter from "./components/Myfooter";

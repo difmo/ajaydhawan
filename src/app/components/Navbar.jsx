@@ -30,9 +30,9 @@ const Navbar = () => {
 
   const navItems = [
     { link: "Home", path: "/" },
-    { link: "Service", path: "/#service" },
-    { link: "About", path: "/#about" },
-    { link: "Product", path: "/#product" },
+    { link: "Artical", path: "/" },
+    { link: "Podcast", path: "/" },
+    { link: "Story", path: "/" },
     { link: "Contact Us", path: "/#contact" },
     { link: "FAQ", path: "/#faq" },
   ];
@@ -46,8 +46,8 @@ const Navbar = () => {
       <nav
         className={`py-4 lg:px-4 px-4 ${
           isSticky
-            ? "sticky left-0 right-0 bg-[#003049] duration-300 top-0"
-            : "top-0 bg-[#003049]"
+            ? "sticky left-0 right-0 bg-[#000000] duration-300 top-0"
+            : "top-0 bg-[#000000]"
         }`}
       >
         <div className="flex justify-between items-center text-base gap-8">
@@ -55,16 +55,16 @@ const Navbar = () => {
             href="/"
             className="text-2xl font-bold flex items-center space-x-3"
           >
-            <Image
+            {/* <Image
               className="w-10 inline-block"
               src={logo} // Ensure logo is in public folder
               alt="GenzoAlpha Logo"
               width={40}
               height={40}
-            />
-            <div className="flex flex-col -space-y-3">
-              <span className="text-white">GenzoAlpha</span>
-              <span className="text-[12px] text-white">Consulting Group</span>
+            /> */}
+            <div className="flex flex-col -space-y-3 gap-1">
+              <span className="text-[#FF4200]">AjayDhawan</span>
+              <span className="text-[12px] text-white">Thought Of The Day</span>
             </div>
           </Link>
 
@@ -86,9 +86,9 @@ const Navbar = () => {
           <div className="hidden lg:flex space-x-4 items-center">
             <button
               onClick={handleOnGetInTouch}
-              className="bg-brandPrimary hover:bg-white text-white py-2 px-4 transition-all duration-300 rounded hover:text-mybg"
+              className="bg-[#FF4200] hover:bg-white text-white py-2 px-4 transition-all duration-300 rounded hover:text-mybg"
             >
-              Get Started
+              Today's Spacial
             </button>
           </div>
 
