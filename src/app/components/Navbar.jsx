@@ -6,7 +6,7 @@ import Link from "next/link"; // Import Next.js Link
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useRouter } from "next/navigation";
 // import { useRouter } from "next/router"; // For scrolling to sections
-import logo from "../assets/AjayDhawan.jpg";
+import logo from "../assets/LogoAD.png";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
@@ -55,13 +55,14 @@ const Navbar = () => {
             href="/"
             className="text-2xl font-bold flex items-center space-x-3"
           >
-            {/* <Image
+            <Image
               className="w-14 h-10 inline-block"
               src={logo} // Ensure logo is in public folder
-              alt="GenzoAlpha Logo"
+              alt="AjayDhawan Logo"
               width={40}
               height={40}
-            /> */}
+            />
+
             <div className="flex flex-col -space-y-3 gap-1">
               <span className="text-[#FF4200]">AjayDhawan</span>
               <span className="text-[12px] text-white">Thought Of The Day</span>

@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import img from "../assets/aboutimg/purplebook.jpg";
-import img2 from "../assets/aboutimg/bookblue.jpg";
+import img from "../assets/aboutimg/book.svg";
+import img2 from "../assets/aboutimg/book2.svg";
 import man1 from "../assets/bgImages/man1.png";
 import man2 from "../assets/bgImages/man2.png";
 import man3 from "../assets/bgImages/man3.png";
