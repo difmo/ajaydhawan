@@ -85,7 +85,7 @@ const HomePage = () => {
                 <button
                   type="button"
                   onClick={handleOnGetInTouch}
-                  className="bg-[#FF4200] hover:bg-white text-white py-2 px-4 transition-all duration-300 rounded-2xl hover:text-mybg"
+                  className="bg-[#FF4200] hover:bg-white text-white border border-gray-500 py-2 px-4 transition-all duration-300 rounded-2xl hover:text-mybg"
                 >
                   Contact Ajay
                 </button>
@@ -119,7 +119,7 @@ const HomePage = () => {
                 <button
                   type="button"
                   onClick={handleOnGetInTouch}
-                  className="bg-[#FF4200] hover:bg-white text-white py-2 px-4 transition-all duration-300 rounded-2xl hover:text-mybg"
+                  className="bg-[#FF4200] hover:bg-white text-white border border-gray-500 py-2 px-4 transition-all duration-300 rounded-2xl hover:text-mybg"
                 >
                   Contact Ajay
                 </button>
@@ -153,7 +153,7 @@ const HomePage = () => {
                 <button
                   type="button"
                   onClick={handleOnGetInTouch}
-                  className="bg-[#FF4200] hover:bg-white text-white py-2 px-4 transition-all duration-300 rounded-2xl hover:text-mybg"
+                  className="bg-[#FF4200] hover:bg-white text-white border border-gray-500 py-2 px-4 transition-all duration-300 rounded-2xl hover:text-mybg"
                 >
                  Contact Ajay
                 </button>

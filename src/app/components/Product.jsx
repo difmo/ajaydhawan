@@ -41,7 +41,7 @@ const Product = () => {
               power to make an impact. Join us in celebrating the beauty of
               handwritten expressions!
             </p>
-            <button className="btn-primary" onClick={handleOpenPopup}>
+            <button className="px-6 py-2 bg-white text-purple-500 border border-gray-500 font-semibold rounded-2xl shadow-md hover:bg-[#FF4200] hover:text-white transition duration-300" onClick={handleOpenPopup}>
               Get Your Copy
             </button>
           </div>
@@ -70,7 +70,7 @@ const Product = () => {
         power to make an impact. Join us in celebrating the beauty of
         handwritten expressions!
       </p>
-      <button className="btn-primary py-3 px-6" onClick={handleOpenPopup}>
+      <button className="px-6 py-2 bg-white text-blue-500 border border-gray-500 font-semibold rounded-2xl shadow-md hover:bg-[#FF4200] hover:text-white transition duration-300" onClick={handleOpenPopup}>
         Get Your Copy
       </button>
     </div>

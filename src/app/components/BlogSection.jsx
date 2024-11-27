@@ -54,7 +54,7 @@ const BlogGrid = () => {
             {/* Read More Button */}
             <div className="mt-4">
               <button
-                className="bg-[#FF4200] hover:bg-white text-white py-2 px-4 transition-all duration-300 rounded-2xl hover:text-mybg"
+                className="bg-[#FF4200] hover:bg-white text-white border border-gray-500 py-2 px-4 transition-all duration-300 rounded-2xl hover:text-mybg"
                 onClick={() => alert(`You clicked on: ${post.title}`)}
               >
                 Read More
@@ -66,7 +66,7 @@ const BlogGrid = () => {
 
       {/* Read All Button */}
       <div className="text-center mt-8">
-        <button className="px-6 py-2 bg-white text-blue-500 font-semibold rounded-2xl shadow-md hover:bg-[#FF4200] hover:text-white transition duration-300">
+        <button className="px-6 py-2 bg-white text-blue-500 border border-gray-500 font-semibold rounded-2xl shadow-md hover:bg-[#FF4200] hover:text-white transition duration-300">
           See More...
         </button>
       </div>

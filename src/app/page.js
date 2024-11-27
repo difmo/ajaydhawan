@@ -11,14 +11,14 @@ import Myfooter from "./components/Myfooter";
 
 export const metadata = {
   title:
-    "GenzoAlpha Consulting Group | Business Consulting Services in Lucknow, India ",
-  title: "GenzoAlpha Consulting ",
-  title: "GenzoAlpha Consulting Group ",
-  title: "GenzoAlpha ",
+    "AjayDhawan Consulting Group | Business Consulting Services in Lucknow, India ",
+  title: "AjayDhawan Consulting ",
+  title: "AjayDhawan Consulting Group ",
+  title: "AjayDhawan ",
   description:
-    "GenzoAlpha Consulting Group offers professional business consulting services in Lucknow, India. We provide strategic solutions to unlock business growth and success.",
+    "AjayDhawan Consulting Group offers professional business consulting services in Lucknow, India. We provide strategic solutions to unlock business growth and success.",
   keywords: [
-    "GenzoAlpha Consulting Group",
+    "AjayDhawan Consulting Group",
     "business consulting",
     "enterprise solutions",
     "business growth",
@@ -62,25 +62,25 @@ export const metadata = {
   ],
   openGraph: {
     title:
-      "GenzoAlpha Consulting Group | Business Consulting Services in Lucknow, India",
+      "AjayDhawanConsulting Group | Business Consulting Services in Lucknow, India",
     description:
       "Transform your business with GenzoAlpha Consulting Group. We offer expert consulting services for businesses in Lucknow, India, to help you grow and succeed.",
-    url: "https://www.genzoalphaconsulting.com/",
+    url: "https://www.ajaydhawan.com/",
     images: [
       {
         url: "../app/assets/logo.png",
         width: 800,
         height: 600,
-        alt: "GenzoAlpha Consulting Group",
+        alt: "AjayDhawan",
       },
     ],
   },
   twitter: {
     card: "../app/assets/bgImages/1.png",
     title:
-      "GenzoAlpha Consulting Group | Business Consulting Services in Lucknow, India",
+      "AjayDhawan Consulting Group | Business Consulting Services in Lucknow, India",
     description:
-      "GenzoAlpha Consulting Group helps businesses in Lucknow, India, achieve growth through strategic consulting services. Let us help you transform your business.",
+      "AjayDhawan Consulting Group helps businesses in Lucknow, India, achieve growth through strategic consulting services. Let us help you transform your business.",
     images: ["../app/assets/headerimg/img1.svg"],
   },
   meta: [
@@ -90,7 +90,7 @@ export const metadata = {
     },
     {
       name: "author",
-      content: "GenzoAlpha Consulting Group",
+      content: "AjayDhawan Consulting Group",
     },
     {
       name: "language",

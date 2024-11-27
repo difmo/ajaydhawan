@@ -58,7 +58,7 @@ const Services = () => {
             <div>
               <a href="https://www.youtube.com/" target="blank">
                 <Image
-                  className="object-contain px-4 bg-white border border-black h-28 rounded-xl "
+                  className="object-contain px-4 bg-white border border-gray-500 h-28 rounded-xl "
                   src={comp1}
                   alt="Component 1"
                   width={110} // Specify width for optimizat10n
@@ -70,7 +70,7 @@ const Services = () => {
             <div>
               <a href="https://www.instagram.com/" target="blank">
                 <Image
-                  className="object-contain bg-white border border-black h-28 rounded-xl"
+                  className="object-contain bg-white border border-gray-500 h-28 rounded-xl"
                   src={comp2}
                   alt="Component 2"
                   width={110}
@@ -82,7 +82,7 @@ const Services = () => {
             <div>
               <a href="https://open.spotify.com/ " target="blank">
                 <Image
-                  className="object-contain px-4 bg-white border border-black h-28 rounded-xl"
+                  className="object-contain px-4 bg-white border border-gray-500 h-28 rounded-xl"
                   src={comp3}
                   alt="Component 3"
                   width={110}
@@ -95,7 +95,7 @@ const Services = () => {
             <div>
               <a href=" https://podcasts.apple.com/us/browse" target="blank">
                 <Image
-                  className="object-contain px-2 bg-white border border-black h-28 rounded-xl"
+                  className="object-contain px-2 bg-white border border-gray-500 h-28 rounded-xl"
                   src={comp4}
                   alt="Component 4"
                   width={110}
@@ -107,7 +107,7 @@ const Services = () => {
             <div>
               <a href=" https://kukufm.com/" target="blank">
                 <Image
-                  className="object-contain px-2 bg-white border border-black h-28 rounded-xl"
+                  className="object-contain px-2 bg-white border border-gray-500 h-28 rounded-xl"
                   src={comp5}
                   alt="Component 5"
                   width={110}

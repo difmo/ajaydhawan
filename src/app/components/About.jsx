@@ -39,7 +39,7 @@ const About = () => {
               was once impossible is only the beginning of what you can create..
             </p>
             <button
-              className=" btn-primary  text-white"
+              className=" px-6 py-2 bg-white text-black border border-gray-500 font-semibold rounded-2xl shadow-md hover:bg-[#FF4200] hover:text-white transition duration-300"
               onClick={handleOpenPopup}
             >
               Read More

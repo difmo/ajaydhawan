@@ -92,7 +92,7 @@ const ContactUs = () => {
                       name="name"
                       value={form.name}
                       onChange={handleChange}
-                      className="w-full px-3 py-1 text-base leading-8 text-black transition-colors duration-200 ease-in-out border border-gray-700 rounded outline-none bg-white focus:border-indigo-500"
+                      className="w-full px-3 py-1 text-base leading-8 text-black transition-colors duration-200 ease-in-out border border-gray-500 rounded outline-none bg-white focus:border-indigo-500"
                     />
                     {errors.name && (
                       <p className="mt-1 text-xs text-red-500">{errors.name}</p>
@@ -113,7 +113,7 @@ const ContactUs = () => {
                       name="email"
                       value={form.email}
                       onChange={handleChange}
-                      className="w-full px-3 py-1 text-base leading-8 text-black transition-colors duration-200 ease-in-out border border-gray-700 rounded outline-none bg-white focus:border-indigo-500"
+                      className="w-full px-3 py-1 text-base leading-8 text-black transition-colors duration-200 ease-in-out border border-gray-500 rounded outline-none bg-white focus:border-indigo-500"
                     />
                     {errors.email && (
                       <p className="mt-1 text-xs text-red-500">
@@ -135,7 +135,7 @@ const ContactUs = () => {
                       name="message"
                       value={form.message}
                       onChange={handleChange}
-                      className="w-full h-32 px-3 py-1 text-base leading-6 text-black transition-colors duration-200 ease-in-out border border-gray-700 rounded outline-none resize-none bg-white focus:border-indigo-500"
+                      className="w-full h-32 px-3 py-1 text-base leading-6 text-black transition-colors duration-200 ease-in-out border border-gray-500 rounded outline-none resize-none bg-white focus:border-indigo-500"
                     ></textarea>
                     {errors.message && (
                       <p className="mt-1 text-xs text-red-500">
@@ -147,7 +147,7 @@ const ContactUs = () => {
                 <div className="w-full p-2">
                   <button
                     type="submit"
-                    className="flex px-8 py-2 mx-auto bg-[#FF4200] hover:bg-white text-white  transition-all duration-300 rounded-2xl hover:text-mybg "
+                    className="flex px-8 py-2 mx-auto bg-[#FF4200] border border-gray-500 hover:bg-white text-white  transition-all duration-300 rounded-2xl hover:text-mybg "
                   >
                     Send Message
                   </button>
