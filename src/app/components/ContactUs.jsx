@@ -162,7 +162,7 @@ const ContactUs = () => {
 
                 <div className="w-full p-2 pt-8 mt-8 bg-black text-center border-t border-gray-200">
                   <a className="text-indigo-500">
-                    contact@inspirationspeaker.com
+                    anandyadav01782@gmail.com
                   </a>
                   <p className="my-5 leading-normal text-neutralGray">
                     Inspiring You from the Heart of the City
