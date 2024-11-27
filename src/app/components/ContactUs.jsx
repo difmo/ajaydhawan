@@ -147,7 +147,7 @@ const ContactUs = () => {
                 <div className="w-full p-2">
                   <button
                     type="submit"
-                    className="flex px-8 py-2 mx-auto border-0 btn-primary"
+                    className="flex px-8 py-2 mx-auto bg-[#FF4200] hover:bg-white text-white  transition-all duration-300 rounded-2xl hover:text-mybg "
                   >
                     Send Message
                   </button>

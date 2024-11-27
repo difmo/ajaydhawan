@@ -29,7 +29,7 @@ const BlogGrid = () => {
   ];
 
   return (
-    <div className="bg-blue-500 text-white py-12">
+    <div className="bg-black text-white py-12 px-1">
       {/* Section Header */}
       <div className="text-center mb-8">
         <h1 className="text-3xl lg:text-5xl font-bold">Read My Blog</h1>
@@ -54,7 +54,7 @@ const BlogGrid = () => {
             {/* Read More Button */}
             <div className="mt-4">
               <button
-                className="px-4 py-2 bg-[#FF4200] text-white font-semibold rounded-lg hover:bg-gray-100 hover:text-black transition duration-300"
+                className="bg-[#FF4200] hover:bg-white text-white py-2 px-4 transition-all duration-300 rounded-2xl hover:text-mybg"
                 onClick={() => alert(`You clicked on: ${post.title}`)}
               >
                 Read More
@@ -66,8 +66,8 @@ const BlogGrid = () => {
 
       {/* Read All Button */}
       <div className="text-center mt-8">
-        <button className="px-6 py-2 bg-white text-blue-500 font-semibold rounded-lg shadow-md hover:bg-gray-100 transition duration-300">
-          See More
+        <button className="px-6 py-2 bg-white text-blue-500 font-semibold rounded-2xl shadow-md hover:bg-[#FF4200] hover:text-white transition duration-300">
+          See More...
         </button>
       </div>
     </div>

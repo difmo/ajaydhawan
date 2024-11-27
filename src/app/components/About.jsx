@@ -23,7 +23,7 @@ const About = () => {
             <Image className="w-[600px]" src={img} alt="About" />
           </div>
           <div className="md:w-3/5 mx-auto">
-            <h2 className="text-4xl text-black font-semibold mb-4 md:w-4/5">
+            <h2 className="text-4xl text-[#FF4200] font-semibold mb-4 md:w-4/5">
               From Impossible to Inevitable: Unlocking the Power to Transform
               Challenges into Triumph
             </h2>

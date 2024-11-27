@@ -64,9 +64,9 @@ export default function Myfooter() {
         </div>
         <div className="w-full sm:flex sm:items-center sm:justify-between border-t border-gray-700 mt-7  ">
           <Footer.Copyright
-            href="https://codeservir.com/"
+            href="https://www.difmo.com/"
             className="mt-4"
-            by="Design and Developed by Codeservir Technologies"
+            by="Design and Developed by Difmo Technology"
             year={2024}
           />
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">

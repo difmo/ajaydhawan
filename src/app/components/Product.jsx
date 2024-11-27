@@ -27,7 +27,7 @@ const Product = () => {
             <Image className="w-[600px]" src={img} alt="Product" />
           </div>
           <div className="mx-auto md:w-3/5">
-            <h2 className="mb-4 text-4xl font-semibold text-black md:w-4/5">
+            <h2 className="mb-4 text-4xl font-semibold text-[#FF4200] md:w-4/5">
               Share Your Creativity
             </h2>
             <p className="mb-8 text-sm md:w-3/4 text-black">
@@ -56,7 +56,7 @@ const Product = () => {
       <Image className="w-[600px] max-w-full" src={img2} alt="Product" />
     </div>
     <div className="mx-auto md:w-3/5">
-      <h2 className="mb-4 text-4xl font-semibold text-black md:w-4/5">
+      <h2 className="mb-4 text-4xl font-semibold text-[#FF4200] md:w-4/5">
         Share Your Creativity
       </h2>
       <p className="mb-8 text-sm md:w-3/4 text-black">

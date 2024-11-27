@@ -6,7 +6,7 @@ import Link from "next/link"; // Import Next.js Link
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useRouter } from "next/navigation";
 // import { useRouter } from "next/router"; // For scrolling to sections
-import logo from "../assets/logo1.png";
+import logo from "../assets/AjayDhawan.jpg";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
@@ -56,7 +56,7 @@ const Navbar = () => {
             className="text-2xl font-bold flex items-center space-x-3"
           >
             {/* <Image
-              className="w-10 inline-block"
+              className="w-14 h-10 inline-block"
               src={logo} // Ensure logo is in public folder
               alt="GenzoAlpha Logo"
               width={40}
@@ -86,7 +86,7 @@ const Navbar = () => {
           <div className="hidden lg:flex space-x-4 items-center">
             <button
               onClick={handleOnGetInTouch}
-              className="bg-[#FF4200] hover:bg-white text-white py-2 px-4 transition-all duration-300 rounded hover:text-mybg"
+              className="bg-[#FF4200] hover:bg-white text-white py-2 px-4 transition-all duration-300 rounded-2xl hover:text-mybg"
             >
               Today's Spacial
             </button>
